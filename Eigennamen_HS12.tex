@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\begin{document}
+\title{Chemie - Eigennamen van organische structuren}
+    \author{Dries Van den Brande}
+
+    \maketitle
+
+    \section*{Koolwaterstoffen}
+    \begin{enumerate}
+        \item isobutaan $$\chemfig[angle increment=30]{-[1](-[-1])-[3]}$$
+        \item isopentaan $$\chemfig[angle increment=30]{-[1](-[-1]-[1])-[3]}$$
+        \item neopentaan $$\chemfig[]{-[:30](-[:-30])(<[:60])<:[:120]}$$
+        \item alleen $$\chemfig{\ce{H2C}=C=\ce{CH2}}$$
+        \item isopreen $$\chemfig[angle increment=30]{\ce{H2C}=C(-[1]\ce{CH3})-[-1]CH=\ce{CH2}}$$
+        \item cyclohexeen $$\chemfig[]{*6(--=---)}$$
+        \item vinyl $$\chemfig[]{\ce{H2C}=CH\bigcdot{}}$$
+        \item allyl $$\chemfig[angle increment=30]{\ce{H2C}=CH-[1]\chemabove{\ce{CH2}}{\bigcdot}}$$
+        \item acetyleen $$\chemfig[]{HC~CH}$$
+        \item ethynyl $$\chemfig[]{HC~C\bigcdot}$$
+        \item benzeen $$\chemfig[]{*6(-=-=-=)}$$
+        \item nafteleen $$\chemfig{*6(=-*6(-=-=-)=-=-)}$$
+        \item arthraceen $$\chemfig{*6(=-*6(=-*6(-=-=--)=-=)--=-)}$$
+        \item fenantreen $$\chemfig[]{[:-30]*6(-=-*6(-*6(-=-=--)=-=--)=-=)}$$
+        \item styreen $$\chemfig[]{*6(-=-(-=[:-30])=-=)}$$
+        \item tolueen $$\chemfig[]{*6(-=-(-)=-=)}$$
+        \item o-xyleen $$\chemfig[]{*6(-=-(-)=(-)-=)}$$
+        \item benzyl $$\chemfig[]{*6(-=-(-\chemabove{\ce{CH2}}{\bigcdot{}})=-=)}$$
+        \item fenyl $$\chemfig[]{*6(-=-(\chemabove{}{\bigcdot{}})=-=)}$$
+        \item o-tolyl $$\chemfig[]{*6(-=-(-\chemabove{\ce{CH3}}{})=(\chemabove{}{\bigcdot{}})-=)}$$
+    \end{enumerate}
+
+    \section*{Organische functies of functionele groepen}
+    \begin{enumerate}
+        \item chloroform $$\chemfig[]{Cl-[:30]C(-[:90]H)(<[:-55]Cl)<:[:-20]Cl}$$
+        \item fenol $$\chemfig[]{*6(-=-(-\chemabove{\ce{OH}}{})=-=)}$$
+        \item 2-naftol $$\chemfig{*6(=-*6(-=-(-[:30]OH)=-)=-=-)}$$
+        \item aniline $$\chemfig[]{*6(-=-(-\chemabove{\ce{NH2}}{})=-=)}$$
+        \item formaldehyde (in aq. formol) $$\chemfig[]{\ce{H2C}=O}$$
+        \item acetaldehyde $$\chemfig[]{\ce{H3C}-CH=O}$$
+        \item propionaldehyde $$\chemfig[]{\ce{CH3}-\ce{CH2}-CH=O}$$
+        \item butyraldehyde $$\chemfig[]{\ce{CH3}-\ce{CH2}-\ce{CH2}-\ce{CH}=O}$$
+        \item benzaldehyde $$\chemfig[]{*6(-=-(-\ce{C}(=[:90]O)-[:-30]H)=-=)}$$
+        \item aceton $$\chemfig[]{\ce{CH3}-CO-\ce{CH3}}$$
+        \item acetofenon $$\chemfig[]{*6(-=-(-\ce{C}(=[:90]O)-[:-30]\ce{CH3})=-=)}$$
+        \item bezofenon $$\chemfig[]{*6(-=-(-\ce{C}(=[:90]O)-[:-30]*6(=-=-=-))=-=)}$$
+    \end{enumerate}
+\end{document}
