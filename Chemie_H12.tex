@@ -3,6 +3,14 @@
 \usepackage[dutch]{babel}
 \usepackage{amsmath}
 \usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
 
 \begin{document}
 \title{Chemie I deel 3}
@@ -27,7 +35,7 @@
     \begin{enumerate}
         \item Defineer: Alkanen. 
         \item Geef de namen van de lineaire alkanen (1-10). 
-        \item Geef de verschillende "old school" grafische voorstellingen van \ce{C4H10}. Waarom zijn deze onpraktisch?
+        \item Geef de verschillende 'old school' grafische voorstellingen van \ce{C4H10}. Waarom zijn deze onpraktisch?
         \item Defineer: conformationele flexibiliteit. 
         \item Teken en benoem de mogelijke vertakte isomeren van butaan en pentaan. 
         \item Wanneer daalt het kookpunt/smeltpunt bij organische moleculen? 
@@ -35,8 +43,8 @@
         \item Defineer: Onverzadiging van een cyclische alkaan. Wat moet men doen per ingevoerde onverzadiging?
         \item Geef alle mogelijke bindingspatronen van een verzadigd hexaan isomeer dat de formule \ce{C6H8} heeft. Hoeveel onverzadigingen heeft dit isomeer?
         \item Wat zijn de voorwaarden om het voorvoegsel "cyclo-" te gebruiken? Teken cyclopropaan /cyclobutaan /cyclopentaan /cyclohexaan.
-        \item Hoe bekomt men een substituenten? Hoe stelt men de KWS voor met 1 substutuent?
-        \item Wat zijn de voorwaarden om het achtervoegsel "-yl" te gebruiken?
+        \item Hoe bekomt men een substituenten? Hoe stelt men de KWS voor met een substituent.
+        \item Hoe wordt de basisnaam van een substituent bepaald?
         \item Teken en benoem de substituenten van:
                 \begin{enumerate}
                     \item methaan / ethaan
@@ -45,6 +53,70 @@
                 \end{enumerate}
         \item Wat zijn de voorwaarden om het voorvoegsel "sec-" en "tert-" te gebruiken?
         \item Defineer: primair en quaternair C-atoom. 
+        \item Waarom moet de hoofdketen genummerd worden?
+        \item Wanneer gebruikt men multiplicerende voorvoegsels?
+        \item Wat is de hoofdketen? Zijn er regels in het nummeren?
+        \item Hoe rangschik je 2 of meerdere substituenten?
+        \item Hoe vernoem je radicalen afgeleid uit alkanen?
+        \item Hoe worden meerdere gelijke samengestelde substituenten aangeduid? 
+        \item Hoe duid men het aantal dubbele koostof bindingen aan in de hoofdketen van een alkaan? Teken: 2-hexeen
+        \item Hoe duid men het aantal meervoudige bindingen aan in de hoofdketen van een alkaan? 
+        \item Benoem de organische structuren:
+            \begin{itemize}
+                \item $$\chemfig[angle increment=30]{\ce{H3C}-[-1]\ce{CH2}-[1]\ce{CH2}-[-1]\ce{CH}(-[-3]\ce{CH3})-[1]\ce{CH3}}$$
+                \item $$\chemfig[angle increment=30]{-[1](-[3])-[-1]-[1](-[3])-[-1](-[-3])-[1]-[-1]}$$
+                \item $$\chemfig[angle increment=30]{\ce{H3C}-[1]\ce{CH}(-[3]\ce{CH3})-[-1]\ce{CH2}-[1]\ce{CH2}-[-1]\ce{CH2}-[1]\ce{CH2}-[-1]\ce{CH}(-[-3]\ce{CH3})-[1]\ce{CH}(-[3]\ce{CH3})-[-1]\ce{CH2}-[1]\ce{CH3}}$$
+                \item $$\chemfig[angle increment=30]{\ce{H3C}-[-1]\ce{CH2}-[1]\ce{CH2}-[-1]\ce{CH2}-[1]\chemabove{\ce{CH}}{\bigcdot}-[-1]\ce{CH2}}$$
+                \item $$\chemfig[angle increment=30]{\ce{H3C}-[-1]\ce{CH2}-[1]\ce{CH2}-[-1]\ce{CH}(-[-3]\ce{CH3})-[1]\chemabove{\ce{CH2}}{\bigcdot}}$$
+                \item $$\chemfig[angle increment=30]{\ce{H3C}-[-1]\ce{CH2}-[1]\ce{CH}(-[3]\ce{CH3})-[-1]\ce{CH2}-[1]\chemabove{\ce{CH2}}{\bigcdot}}$$
+                \item $$\chemfig[angle increment=30]{\ce{H3C}-[-1]\ce{CH}(-[-3]\ce{CH3})-[1]\ce{CH2}-[-1]\ce{CH2}-[1]\chemabove{\ce{CH2}}{\bigcdot}}$$
+            \end{itemize}
+        \item Teken de organische structuren: (oplossingen staan in volgorde in het boek0)
+            \begin{itemize}
+                \item 3-methylpropaan
+                \item methylcyclohexaan
+                \item 2,3,3,4-tetramethylpentaan
+                \item 5,5-di-t-butylnonaan
+                \item 2-methylpentaan
+                \item 2,3,5-trimethylhexaan
+                \item 2,7,8-trimethyldecaan
+                \item 4-isopropyl-5-porpyloctaan
+                \item 3-ethyl-2-methylheptaan
+                \item 5-methyl-4-propylnonaan
+                \item 1-methylpentyl
+                \item 2-methylpentyl
+                \item 3-methylpentyl
+                \item 4-methylpentyl
+                \item 4,4-diethyloctaan
+                \item 5,6-bis(1,1-dimethylpropyl)decaan
+                \item 1,4-hexadieen
+                \item alleen 
+                \item isopropeen
+                \item cyclohexeen
+                \item vinyl
+                \item allyl
+                \item butenyn
+                \item actyleen
+                \item ethynyl
+                \item 3-penteen-1-yn
+                \item 1,4-cyclohexadieen
+                \item cyclooctaterta"een
+                \item 1,3-hexadieen-5-yn
+                \item 1-penteen-4-yn
+                \item benzeen
+                \item naftaleen
+                \item anthraceen
+                \item fenantreen
+                \item o-benzeen / m-benzeen / p-benzeen
+                \item 1-ethyl-4-methylbenzeen
+                \item 1,2,3-trimethylbenzeen
+                \item streen
+                \item tolueen
+                \item o-xyleen
+                \item benzyl
+                \item fenyl
+                \item o-tolyl
+            \end{itemize}
         \item 
     \end{enumerate}
 \end{document}
