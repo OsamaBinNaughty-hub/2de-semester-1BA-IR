@@ -2,10 +2,472 @@
 
 \input{preamble.tex}
 
+\setcounter{section}{6}
+
 % Everything in this region will be overriden
 \begin{document}
 
     \maketitle
     
+    \section{Aggregatietoestanden en toestandsovergangen. Fasenleer}
+
+    \subsection{Aggregaattoestanden en toestandovergangen bij zuivere stoffen}
+    \begin{enumerate}
+        \item Wat zijn de 3 voornaamste aggregaattoestanden?
+        \item Leg uit: gecondenceerde toestand.
+        \item Warmte-inbreng in een zuivere stof resulteerd in?
+        \item Faseovergang van een zuivere stof gebeurt bij een constante ... ? 
+        \item Faseovergang van een zuivere stof is afhankelijk van?
+        \item Wat zijn alle mogelijke toestandsovergangen?
+        \item Waarom is de energie nodig om te sublimeren groter dan koken en veel groter dan smelten?
+        \item Teken een T-enthalpie inbreng fasediagram van ijs-water-damp.
+        \item Wat bepaalt de fasenregel van gibbs?
+        \item Wat is een vrijhijdsgraad?
+        \item Wat bedoeld men met het aantal onafhankelijke chemische componenten?
+        \item De toestand in een chemisch systeem is in functie van?
+        \item Wat is het aantal onafhankelijke chemische componenten bij heterogeen mengsel van \ce{H2O} en \ce{Hg}?
+        \item Wat is het aantal onafhankelijke chemische componenten bij homogeen mengsel van \ce{H2O},\ce{NaCl} en ethanol?
+        \item Wat is het aantal onafhankelijke chemische componenten bij \ce{N2 + 3H2O <=> 2NH3}?
+        \item Geef de formule voor de faseregel van Gibbs en leg alle parameters uit.
+        \item Wat is de vrijhijdsgraad voor zuiver kokend water?
+        \item Wat is de vrijhijdsgraad voor kokend homogeen mensel van \ce{H20} en \ce{ethanol}?
+        \item Wat is de vrijhijdsgraad voor smeltend hetoreen mengsel van \ce{Na} , \ce{K} en homogene smelt?
+        \item Wat is dampdruk? Geef de notatie voor dampdruk.
+        \item Hoe wordt vluchtigheid gedefini\"eerd?
+        \item Wat is verzadigde damp?
+        \item De snelheid van verdamping is ... ? Maak tekening.
+        \item De snelheid van condensatie is ... ? Maak tekening.
+        \item Wanneer is de snelheid van verdamping gelijk aan de snelheidd van condensatie?
+        \item Waarom neemt de dampdruk toe na verhoging van de temperatuur? Maak tekening.
+        \item Geef de verschillen tussen damp en koken op thermodynamisch niveau (2 zaken).
+        \item Hoe heet de functie die dampdruk uitdrukt als functie van de temperatuur? Wat is hier opmerkelijk aan?
+        \item Wat is het tripelpunt? Maak tekening. Wat is hier opmerkelijk aan?
+        \item Wat is het kritisch punt? Maak tekening. Wat is hier opmerkelijk aan?
+        \item Wat is subkritische vloeistof? Maak tekening. Wat is hier opmerkijk aan? Wat is een toepassing van dit spul, leg uit.
+        \item Wat is de wet van Clapeyron-Clausius? Wat zijn de beperkingen hierop? 
+        \item Hoe kan men experimenteel de kook enthalpie vinden?
+        \item Waarom is de wet van Clapeyron-Clausius een semi-logaritmische grafiek?
+        \item Leg uit: Wet van Trouton.
+        \item Teken een fasediagram van zuivere stoffen. Waarom is \ce{H2O} een uitzondering?
+        \item Teken een fasediagram van zuivere stoffen met allotopen. Geef een voorbeeld.
+        \item Wat is het grote verschil tussen allotropen en gewone enkelvoudige stoffen m.b.t. het fasediagram?
+        \item Wat bedoeld men met een meta-stabiele toestand? Geef een voorbeeld.
+    \end{enumerate}
+
+    \subsection{Faseovergangen bij homogene mengsels van vloeistoffen}
+    \begin{enumerate}
+        \item Wat is het verschil tussen ideale en niet-ideale mengsels?
+        \item Wat wordt er bedoeld met een limietgeval?
+        \item Wat zijn colligatieve eigenschappen? Noem 4 verschillende colligatieve eigenschappen.
+        \item Wat is colligatieve molaliteit? Geef de definitie en formule.
+        \item Als de molariteit van \ce{NaCl} $0.01M$ is. Wat is de colligatieve molaliteit dan?
+        \item Geef en leidt af: Wet van Raoult.
+        \item Wat is de voorwaarde omdat men de wet van Raoult mag gebruiken?
+        \item Leid formule af voor de dampdruk van zuivere oplossing A door aanwezigheid solutans B.
+        \item Geef een wiskunige formule voor het berekenen van de molaliteit van B.
+        \item Leg uit aan de hand van de wet van Raoult waarom men zout strooit in de winter?
+        \item Leg osmotische druk uit. Geef voorbeelden.
+        \item Wat gebeurt er als je zout of zuiver water zou drinken?
+        \item Waarom willen we weten hoe kookprocessen werken van niet zuivere mengsels? Geef een voorbeeld.
+        \item Leg uit hoe men aardolie destilleerd.
+        \item Leid de formule van de dampdruk van een homogeen ideaal mengsel af + tekening ($p=f(x^{vl}_A)$)
+        \item Stel vanuit de wet van Raoult de functie $ p = f(x_A^d) $ op. (homogeen ideaal mengsel)
+        \item Wat is het verschil tussen $p=f(x^{vl}_A)$ en $ p = f(x_A^d) $. Teken deze 2 functies. Duid $x_A^d$ en $x^{vl}_A$ aan op de grafiek.
+        \item Hoe ga je van een \{P,X\} naar een \{T,X\} diagram?
+        \item Wat zijn de karakteristieken van een \{T,X\} diagram?
+        \item Teken en leg uit wat er gebeurt bij het koken van een ideaal mengsel van 2 vloeistoffen zonder scheiding.
+        \item Teken en leg uit wat er gebeurt bij een gefractioneerde destillatie van een ideaal homogeen mengsel van 2 vloeistoffen. Hoe verloopt de temperatuur bovenaan de destillatiekolom?
+        \item Wat bedoelt men met de niet-idealiteit in een homogeen mengsel van 2 vloeistoffen? Wat is het resultaat dan is de \{T,X\} diagrammen dan?
+        \item Wat is een azeotropisch mengsel? Geef een tekening. Wat is de vrijheidsgraad hiervan?
+        \item Teken en leg uit wat er gebeurt bij een gefractioneerde destillatie van een azeotropisch mengsel.
+    \end{enumerate}
+
+    \subsection{Faseovergangen bij heterogene mengsels}
+    \begin{enumerate}
+        \item Geef een voorbeeld van beperkte mengbaarheid. (vluchtige en minder vluchtige stoffen)
+        \item Geef een voorbeeld van beperkte mengbaarheid met een endotherme vermenging. Leg uit + tekening. (Niet vluchtige stoffen)
+        \item Leg uit waarom ,bij een gegeven temperatuur, de fasesamenstelling onafhankelijk is van de mengselsamenstelling (endotherme vermenging, Niet vluchtige stoffen). Maar...
+        \item Leid de formules voor $X_A^{F1}$ en $X_A^{F2}$ af. (Niet vluchtige stoffen)
+        \item Wat is de hefboomregel? Wat kan men hieruit afleiden? (Niet vluchtige stoffen)
+        \item Stel dat $n_A^0 = 2.00mol$ en $n_B^0 = 2.50mol$ gemengd worden. Stel dat bij evenwicht, de fasen F1 en F2 de fasensamenstellingen $X_A^{F1} = 0.220$ en $X_A^{F2} = 0.890$. Wat zijn de molhoeveelheden van component A en B op de twee fasen F1 en F2. (Niet vluchtige stoffen)
+        \item Teken het \{T,X\} diagram voor het limietgeval dat 2 vloeistoffen helemaal niet mengbaar zijn. (Niet vluchtige stoffen)
+        \item Geef een voorbeeld van beperkte mengbaarheid met een exotherme vermenging. (Niet vluchtige stoffen)
+        \item Geef een voorbeeld van een mengsel met gesloten 2 fasengebied. (Niet vluchtige stoffen)
+        \item Wat is de formule voor de dampdruk van 2 volledig niet mengbare vloetstoffen? + tekening (Vluchtige stoffen)
+        \item Wat is er opmerkelijk aan de kooktemperatuur van een heterogeen mengsel van A en B? (Vluchtige stoffen) Waarom is dit?
+        \item Wat is een stoomdestillatie? Wanneer is het relevant? Wat is het nut ervan?
+        \item Wat is een eutectium of eutectisch mengsel? Geef een toepassing.
+        \item Wat is smelt?
+        \item Wat is het eutectisch punt?
+        \item Leg uit: smeltexperiment in mengsel van 2 helemaal niet mengbare vaste stoffen
+        \item Leg uit: stolexperiment in mengsel van 2 helemaal niet mengbare vaste stoffen
+        \item Wanneer ontstaan meerdere eutectia? Teken.
+    \end{enumerate}
+
+
+    \section{De elektronenconfiguratie van atomen}
+    \subsection{Inleiding}
+    \begin{enumerate}
+        \item Waarom kan je debateren dat deze 'statement' niet klopt: Atomen zijn ondeelbare deeltjes in chemische reacties.
+        \item Uit wat bestaat materie zelden in standaardomstandigheden? Zijn er uitzonderingen? Hoe kunnen we deze staat krijgen?
+        \item Wat zijn vrije atomen?
+        \item Wat zijn moleculen?
+        \item Uit welke deeltjes bestaan polymeren, metalen en keramische materialen?
+    \end{enumerate}
+
+    \subsection{Ionisatie energie van atomen}
+    \begin{enumerate}
+        \item Wat is de ionisatie-energie van een atoom? Aan wat is dit gelijk in absolute waarden?
+        \item Je hebt eerste/tweede/... ionisatie-energie. Hoe ver kan je gaan?
+        \item Waarom is de tweede ionisatie-energie kleiner dan de eerste ionisatie-energie?
+        \item Hoe verlopen de ionisatie-energieën in functie van het periodiek systeem?
+        \item Bewijs dat elektronenconfiguratie bestaat in lagen (schillen). Doe dit met Natrium.
+        \item Wat zijn de besluiten genomen in verband met de elektronenconfiguratie?
+    \end{enumerate}
+
+    \subsection{Interactie elektromagnetische golf-materie}
+    \begin{enumerate}
+        \item Wat bevestigt de studie van de interactie van elektromagnetische straling? Leg uit.
+        \item Wat bedoelt men met 'FINGERPRINT' van een atoom?
+        \item Wat is een golf?
+        \item Wat is een elektromagnetische golf?
+        \item Wat is elektromagnetische straling?
+        \item Wat is het gemeenschappelijk kenmerk van de elektromagnetische golven? Maak een tekening.
+        \item Wat zijn de belangrijke parameters van elektromagnetische golven?
+        \item Geef de 'brede waaier' van elektromagnetische golven. Hoe verloopt de energie/frequentie/golflengte in deze waaier?
+        \item Wat is de golflengte van zichtbaar licht?
+        \item Waarom is de energie recht evenredig aan de frequentie bij elektromagnetische golven?
+        \item Wat bedoelt men met witspectrumlicht?
+        \item Hoe creëert men licht van geatomiseerd gas in een ontladingsbuis? Waarom is dit geëmiteerd licht niet continue? Hoe noemt men dit spectrum?
+        \item Wat is atomenemissie? Geef een tekening. Geef voorbeelden.
+        \item Wat is de emperische gelijkheid van Balmer?
+        \item Leg uit: Atomenemissie spectrum is het element van de 'FINGERPRINT'.
+        \item Leg uit wat het absorptiespectrum is en het verschil met het emissiespectrum. Wat leert men hier uit?
+        \item Wat zijn de uiteindelijke conclusies van de energieverdeling in de materie? Welke ontdekkingen complementeren deze energieverdeling?
+        \item Geef de stelling van Planck.
+        \item Waarop geeft de stelling van Planck antwoord?
+        \item Wat zijn kwanta?
+        \item Wat is kwantum?
+        \item Wat is de constante van Planck?
+        \item Hoe kan men met submicroscopische deeltjes en macroscopische voorwerpen een verband leggen in de klassieke mechanica?
+    \end{enumerate}
+
+    \subsection{Dualiteit deelte-golfkarakter van een elektron in de materie}
+    \begin{enumerate}
+        \item Wat kun je vertellen over de interferentie franjes van Young?
+        \item Wat zijn X-stralen en geef een toepassing?
+        \item Wat is een diffractiepatroon?
+        \item Waarom is het diffractiepatroon van aluminiumfolie zo speciaal? (voorbeeld)
+        \item Wat is het uiteindelijk besluit uit de interferentiefranjes van Young? Is hier een belangrijke voorwaarde aan gehecht? (hint: ja)
+        \item Wat is een toepassing van het dualiteitprincipe?
+        \item Wat zegt de wet van De Broglie?
+        \item Wat zijn de voorwaarden van een De Broglie-golf?
+        \item Wat is de relevantie bij submicroscopische deeltjes met de wet van De Broglie?
+        \item Wat is de niet-relevantie bij macroscopische deeltjes met de wet van De Broglie?
+        \item Leg de planetaire visie en zijn beperkingen uit.
+        \item Geef de formule voor de bindingsenergie in het Bohr-model. Wat leer je hier uit? Waarom is hier de absorbtie- en emissiespectra perfect te verklaren?
+        \item Wanneer is een energieovergang mogelijk?
+        \item Wat is de stralingsfrequentie?
+        \item Bereken $\lambda_{4 \rightarrow 2}$. 
+        \item Bewijs de emperische relatie van Balmer.
+        \item Geef de 4 lijnenreeksen. Wat leer je hieruit?
+        \item Wat is de laagste energietoestand?
+        \item Bewijs dat de ionisatie-energie de positieve laagste energietoestand is.
+        \item Wat zijn de tekortkomingen van het Bohr-model?
+    \end{enumerate}
+
+    \subsection{Atoomorbitalen en elektronenconfiguratie in meerelektrone atomen}
+    \begin{enumerate}
+        \item Leg uit: onzekerheidsprincipe van Heisenberg.
+        \item Wat is de wiskundige formuleren van het onzekerheidsprincipe van Heisenberg. Wat leer je hier uit?
+        \item Pas het onzekerheidsprincipe van Heisenberg toe op een elektron ($x=1 A  , \Delta x = 0.3 A$). Wat leer je hier uit?
+        \item Pas het onzekerheidsprincipe van Heisenberg toe op een golfbal ($m=45.9g , v=200 \frac{m}{s}, \Delta x = 1mm$). Wat leer je hier uit?
+        \item Hoe worden orbitalen wiskundig beschreven?
+        \item Geef en leg de vergelijkingen van Schrödinger uit.
+        \item Geef alle kwantumgetallen, hun betekenis en hun mogelijke theoretische waarden.
+        \item Leg het experiment uit dat tot de ontdekking van het 4de kwantumgetal heeft geleid. Waarom is dit kwantumgetal het buitenbeetje van de kwantumgetallen? Waarom is deze dan ingevoerd?
+        \item Geef alle kwantumgetal combinaties tot $n=4$.
+        \item Wat zijn de 2 soorten grafische voorstellingen van de orbitalen? Leg ze ook uit.
+        \item Bereken de onzekerheid op de impuls $\Delta p$ van een golfbal met massa $m = 4.59e-2$ en
+        snelheid $v = 55.56 m/s$ waarvan we de positie tot op 1mm nauwkeurig kennen en trek conclusies uit de gevonde waarde.
+        \item Leg het onzekerheidsprincipe van Heisenberg uit + formule.
+        \item Geef alle kwantumgetallen, hun betekenis en hun mogelijke theoretische waarden.
+        \item Leg het experiment uit dat tot de ontdekking van het 4de kwantumgetal heeft geleid.
+        \item Wat zijn knooppunten in orbitalen (schets een grafiek).
+        \item Beschrijf alle orbitalen.
+        \item Wat is het uitsluitingsprincipe van Pauli?
+        \item Wat is de regel van Hund? Zijn er uitzonderingen?
+        \item Waarom volgt Chroom (Cr) niet de theoretische verdeling van elektronen?
+        \item Wat is de definitie van valentie?
+        \item Geef de 2 mogelijke definities voor de straal van een atoom.
+        \item Leg het verband tussen de covalente straal, het periodiek systeem en de ionisatie-energie uit.
+    \end{enumerate}
+
+
+    \section{Ruimtelijke- en elektronenstructuur van moleculen}
+
+    \begin{enumerate}
+        \item Wat is de VSEPR-theorie?
+        \item Wat is een elektron domein?
+        \item Geef 4 verschillende voorstellingen van ammoniak nodig om de structuur te begrijpen.
+        \item Waarom heb je verschillende hoeken bij \ce{CH4}, \ce{NH3}, \ce{H2O}?
+        \item Wanneer is een binding covalent, polair covalent of ionair?
+        \item Wat is een dipoolmoment en bindingsmoment in de chemie?
+        \item Zet 1 D(ebye) om naar SI-eenheden.
+        \item Wat is het dipoolmoment van \ce{CO2}?
+        \item Geef de definitie van intermoleculaire krachgten.
+        \item Beschrijf de dipool-dipool interactie en zijn effect op het kookpunt.
+        \item Beschrijf de ge\"induceerde krachten of gedisperceerde London krachten.
+        \item Geef 3 parameters die de sterkte van de intermoleculaire krachten bij apolaire stoffen bepalen.
+        \item Beschrijf waterstofbruggen.
+        \item Geef de definitie van oppervlaktespanning.
+        \item Geef de definitie van capillariteit.
+    \end{enumerate}
+
+    \section{Moleculaire orbitalen en structuren}
+
+    \begin{enumerate}
+        \item Wat zijn de limieten van de VSEPR-theorie?
+        \item Wat is overlap in de kwantum chemie?
+        \item Wat is een bindend elektronenpaar?
+        \item Waarom onstaat er steeds bij atoomoverlap een moleculaire orbitaal?
+        \item Beschrijf de gevormde orbitalen bij de vorming van \ce{H2} uit 2 \ce{H}-atomen.
+        \item Wat is hybridisatie van atoomorbitalen en geef de wiskundige betekenis.
+        \item Beschrijf orbitalair het ganse structuurvormingsproces van \ce{BeH2}.
+        \item Beschrijf orbitalair het ganse structuurvormingsproces van \ce{BF3}.
+        \item Beschrijf orbitalair het ganse structuurvormingsproces van \ce{CH4}.
+        \item Beschrijf orbitalair het ganse structuurvormingsproces van \ce{PF5}. 
+        \item Beschrijf orbitalair het ganse structuurvormingsproces van \ce{SF6}.
+        \item Wat is de voorwaarde omdat men hybridisatie kan toepassen?
+        \item Wat is een $\sigma$-binding?
+        \item Wat is een $\sigma$-bindings geraamte?
+        \item Wanneer kun je afwijkingen hebben bij de hybrides en hoe zou je dit kunnen verklaren?
+        \item Wat zijn $\pi$-orbitalen?
+        \item Beschrijf orbitalair het ganse structuurvormingsproces van \ce{CH2} (2 $C$-atomen en 4 $H$-atomen).
+        \item Kunnen $\pi$-bindingen draaien en zo ja, in welke omstandigheden?
+        \item Geef alle mogelijke combinaties orbitalen die samen een  $\pi$-binding kunnen vormen.
+        \item Beschrijf  $\pi$-elektronendelokalisatie.
+        \item Als n atoomorbitalen overlappen, hoeveel molecuuloribtalen worden er dan gevormd?
+        \item Wat zijn K\'ekul\'estructuren?
+        \item Beschrijf met de molecuul orbitalen theorie de structuur van een benzeen-ring.
+        \item Geef een nodige voorwaarde opdat een molecule aromatisch kan genoemd worden.
+        \item De stof \ce{NO3-} heeft een gedelokaliseerd $\pi$-elektronenpaar. Welke eigenschappen zou je uit hieruit kunnen afleiden? 
+        \item Geef een definitie van een elektrofiel.
+        \item Geef een definitie van een nucleofiel.
+        \item Wat is een elektrodefici\"ent atoom?
+        \item Bespreek de reactie tussen een elektrofiel en een nucleofiel op thermodynamisch niveau.
+        \item Wat is een \textbf{heterolytische reactie}?
+        \item Wat is een \textbf{homolytische reactie}?
+        \item Wat is een radicaal?
+        \item In welk soort milieu worden heterolytische en homolytische reacties bevorderd?
+        \item Wat wordt er bedoelt met inductieve effecten?
+        \item Tot hoe ver hebben de meeste inductieve effecten hun effect?
+        \item Geef een gevolg van mesomere effecten.
+    \end{enumerate}
+    
+    \section{De chemische binding}
+
+    \begin{enumerate}
+        \item Waarom gaan atomen bindingen aan?
+        \item Bespreek alle mogelijke bindingen.
+        \item Wat is een ionaire stof?
+        \item Geef de definitie van stabiele ionen.
+        \item Wat is elekto affiniteit (EA)?
+        \item Wat is ionisatie-energie?
+        \item Beschrijf de Born-Habercyclus voor keukenzout.
+        \item Teken de Lewisstructuur van \ce{OF2} en \ce{NH4}.
+        \item Geef de definitie van een formele lading.
+        \item Wat is de formele lading van \ce{NH4+} en \ce{ClO3-}?
+        \item Wat is resonantie?
+        \item Teken de correcte Lewisstructuur van \ce{CO3^2-}
+        \item Wat is een radicaal?
+        \item Schrijf de correcte Lewisstructuur van \ce{NO2}
+        \item Schrijf de correcte Lewisstructuur van \ce{BeH2}
+        \item Schrijf de correcte Lewisstructuur van \ce{BF3}
+        \item Wat is hypervalentie?
+        \item Schrijf de correcte Lewisstructuur van \ce{SF6}
+        \item Schrijf de correcte Lewisstructuur van \ce{SO3}
+    \end{enumerate}
+
+    \section{Organische chemie: structen en naamgeving}
+    \begin{enumerate}
+        \item Wanneer is een molecule organisch?
+        \item Wat wordt er bedoeld met een \textbf{verzadigd C-atoom}?
+        \item Geef de molecuulformule van een volledig verzadigde koolwaterstof.
+        \item Wat zijn alkanen?
+        \item Wat wordt er bedoeld met \textbf{conformationele flexibiliteit}?
+        \item Geef alle \textbf{multiplicerende voorvoegsels} voor substituenten.
+        \item Geef alle \textbf{multiplicerende voorvoegsels} voor samengestelde substituenten.
+        \item Teken de structuur van 5,6-bis(1,1-dimethylpropyl)decaan.
+        \item Teken de structuur van 2-hexeen.
+        \item Teken de structuur van isopreen.
+        \item Teken de structuur van cyclooctatetra\"een.
+        \item Geef de definitie van een organische functie.
+        \item Wat zijn hetero-atomen?
+        \item Geef alle soorten KWS substituenten en leg verder uit.
+        \item Geef het verschil tussen een carbo\textbf{nyl}groep en een carbo\textbf{xyl}groep.
+        \item Geef het verschil tussen de substitutieve- en radicofunctionele nomenclatuur.
+        \item Wat is een hydroxylgroep?
+        \item Geef de definitie van een alkoxy groep.
+        \item Wat zijn fenolen?
+        \item Wat is een amino groep?
+        \item Wat zijn nitroderivaten?
+        \item Wat is een aldehyde functie?
+        \item Wat is een carbonyl groep?
+    \end{enumerate}
+
+    \section{Organische chemie: structuren en naamgeving}
+    \subsection*{Inleiding}
+    \begin{enumerate}
+        \item Defineer: Organische chemie.
+        \item Welke verbindingen kan een C-atoom aangaan? Wat is een direct vervolg hiervan? 
+        \item Wanneer wordt het C-atoom \textbf{verzadigd} of \textbf{onverzadigd} genoemd?
+        \item Defineer: koolwaterstoffen. Uit wat worden deze ontgonnen? Wat wordt er afgezondert bij een destilatie van dit product.
+        \item Defineer: verzadigde koolwaterstoffen.
+    \end{enumerate}
+
+    \subsection*{Koolwaterstoffen}
+    \begin{enumerate}
+        \item Defineer: Alkanen. 
+        \item Geef de namen van de lineaire alkanen (1-10). 
+        \item Geef de verschillende 'old school' grafische voorstellingen van \ce{C4H10}. Waarom zijn deze onpraktisch?
+        \item Defineer: conformationele flexibiliteit. 
+        \item Teken en benoem de mogelijke vertakte isomeren van butaan en pentaan. 
+        \item Wanneer daalt het kookpunt/smeltpunt bij organische moleculen? 
+        \item Wat is de algemene molecuulformule van een cyclische alkaan (1 ringstructuur)? Waarom is deze anders?
+        \item Defineer: Onverzadiging van een cyclische alkaan. Wat moet men doen per ingevoerde onverzadiging?
+        \item Geef alle mogelijke bindingspatronen van een verzadigd hexaan isomeer dat de formule \ce{C6H8} heeft. Hoeveel onverzadigingen heeft dit isomeer?
+        \item Wat zijn de voorwaarden om het voorvoegsel 'cyclo-' te gebruiken? Teken cyclopropaan /cyclobutaan /cyclopentaan /cyclohexaan.
+        \item Hoe bekomt men een substituenten? Hoe stelt men de KWS voor met een substituent.
+        \item Hoe wordt de basisnaam van een substituent bepaald?
+        \item Teken en benoem de substituenten van:
+                \begin{enumerate}
+                    \item methaan / ethaan
+                    \item propaan / cyclopropaan
+                    \item butaan / isobutaan / cyclobutaan
+                \end{enumerate}
+        \item Wat zijn de voorwaarden om het voorvoegsel 'sec-' en 'tert-' te gebruiken?
+        \item Defineer: primair en quaternair C-atoom. 
+        \item Waarom moet de hoofdketen genummerd worden?
+        \item Wanneer gebruikt men multiplicerende voorvoegsels?
+        \item Hoe vernoem je radicalen afgeleid uit alkanen?
+        \item Hoe worden meerdere gelijke samengestelde substituenten aangeduid? 
+        \item Hoe duid men het aantal dubbele koolstof bindingen aan in de hoofdketen van een alkaan?
+        \item Hoe duid men het aantal meervoudige bindingen aan in de hoofdketen van een alkaan? 
+        \item Defineer: Aromatische koolwaterstoffen. 
+        \item Defineer: Digesubstitueerde benzeenringen. 
+        \item Wat zijn de voorwaarden om de voorvoegsels 'o-' / 'm-' / 'p-' te gebruiken?
+        \item Benoem de organische structuren:
+            \begin{itemize}
+                \item $$\chemfig[angle increment=30]{\ce{H3C}-[-1]\ce{CH2}-[1]\ce{CH2}-[-1]\ce{CH2}-[1]\chemabove{\ce{CH}}{\bigcdot}-[-1]\ce{CH2}}$$
+                \item $$\chemfig{\ce{H2C}=C=\ce{CH2}}$$
+                \item $$\chemfig[angle increment=30]{\ce{H2C}=C(-[1]\ce{CH3})-[-1]CH=\ce{CH2}}$$
+                \item $$\chemfig[]{*6(--=---)}$$
+                \item $$\chemfig[]{\ce{H2C}=CH\bigcdot{}}$$
+                \item $$\chemfig[angle increment=30]{\ce{H2C}=CH-[1]\chemabove{\ce{CH2}}{\bigcdot}}$$
+                \item $$\chemfig[]{HC~CH}$$
+                \item $$\chemfig[]{HC~C\bigcdot}$$
+                \item $$\chemfig{*8(-=-=-=-=)}$$
+                \item $$\chemfig[angle increment=30]{=[1]-[-1]-[1]~[-1]}$$
+                \item $$\chemfig{*6(=-*6(-=-=-)=-=-)}$$
+                \item $$\chemfig{*6(=-*6(=-*6(-=-=--)=-=)--=-)}$$
+                \item $$\chemfig[]{[:-30]*6(-=-*6(-*6(-=-=--)=-=--)=-=)}$$
+                \item $$\chemfig[]{*6(-=-(-=[:-30])=-=)}$$
+                \item $$\chemfig[]{*6(-=-(-)=-=)}$$
+                \item $$\chemfig[]{*6(-=-(-)=(-)-=)}$$
+                \item $$\chemfig[]{*6(-=-(-\chemabove{\ce{CH2}}{\bigcdot{}})=-=)}$$
+                \item $$\chemfig[]{*6(-=-(\chemabove{}{\bigcdot{}})=-=)}$$
+                \item $$\chemfig[]{*6(-=-(-\chemabove{\ce{CH3}}{})=(\chemabove{}{\bigcdot{}})-=)}$$
+            \end{itemize}
+        \item Teken de organische structuren: (oplossingen staan in volgorde in het boek)
+            \begin{itemize}
+                \item 3-methylpentaan
+                \item methylcyclohexaan
+                \item 2,3,3,4-tetramethylpentaan
+                \item 5,5-di-t-butylnonaan
+                \item 2-methylpentaan
+                \item 2,3,5-trimethylhexaan
+                \item 2,7,8-trimethyldecaan
+                \item 4-isopropyl-5-porpyloctaan
+                \item 3-ethyl-2-methylheptaan
+                \item 5-methyl-4-propylnonaan
+                \item 1-methylpentyl
+                \item 2-methylpentyl
+                \item 3-methylpentyl
+                \item 4-methylpentyl
+                \item 4,4-diethyloctaan
+                \item 5,6-bis(1,1-dimethylpropyl)decaan
+                \item 2-hexeen
+                \item 1,4-hexadieen
+                \item alleen 
+                \item isopreen
+                \item cyclohexeen
+                \item vinyl
+                \item allyl
+                \item butenyn
+                \item actyleen
+                \item ethynyl
+                \item 3-penteen-1-yn                                                                                                                                                   
+                \item 1,4-cyclohexadieen
+                \item cyclooctaterta"een
+                \item 1,3-hexadieen-5-yn
+                \item 1-penteen-4-yn
+                \item benzeen
+                \item naftaleen
+                \item anthraceen
+                \item fenantreen
+                \item o-benzeen / m-benzeen / p-benzeen
+                \item 1-ethyl-4-methylbenzeen
+                \item 1,2,3-trimethylbenzeen
+                \item streen
+                \item tolueen
+                \item o-xyleen
+                \item benzyl
+                \item fenyl
+                \item o-tolyl
+            \end{itemize}
+    \end{enumerate}
+
+    \subsection{Chemie - Eigennamen van organische structuren}
+
+    \subsubsection{Koolwaterstoffen}
+    \begin{enumerate}
+        \item isobutaan $$\chemfig[angle increment=30]{-[1](-[-1])-[3]}$$
+        \item isopentaan $$\chemfig[angle increment=30]{-[1](-[-1]-[1])-[3]}$$
+        \item neopentaan $$\chemfig[]{-[:30](-[:-30])(<[:60])<:[:120]}$$
+        \item alleen $$\chemfig{\ce{H2C}=C=\ce{CH2}}$$
+        \item isopreen $$\chemfig[angle increment=30]{\ce{H2C}=C(-[1]\ce{CH3})-[-1]CH=\ce{CH2}}$$
+        \item cyclohexeen $$\chemfig[]{*6(--=---)}$$
+        \item vinyl $$\chemfig[]{\ce{H2C}=CH\bigcdot{}}$$
+        \item allyl $$\chemfig[angle increment=30]{\ce{H2C}=CH-[1]\chemabove{\ce{CH2}}{\bigcdot}}$$
+        \item acetyleen $$\chemfig[]{HC~CH}$$
+        \item ethynyl $$\chemfig[]{HC~C\bigcdot}$$
+        \item benzeen $$\chemfig[]{*6(-=-=-=)}$$
+        \item nafteleen $$\chemfig{*6(=-*6(-=-=-)=-=-)}$$
+        \item arthraceen $$\chemfig{*6(=-*6(=-*6(-=-=--)=-=)--=-)}$$
+        \item fenantreen $$\chemfig[]{[:-30]*6(-=-*6(-*6(-=-=--)=-=--)=-=)}$$
+        \item styreen $$\chemfig[]{*6(-=-(-=[:-30])=-=)}$$
+        \item tolueen $$\chemfig[]{*6(-=-(-)=-=)}$$
+        \item o-xyleen $$\chemfig[]{*6(-=-(-)=(-)-=)}$$
+        \item benzyl $$\chemfig[]{*6(-=-(-\chemabove{\ce{CH2}}{\bigcdot{}})=-=)}$$
+        \item fenyl $$\chemfig[]{*6(-=-(\chemabove{}{\bigcdot{}})=-=)}$$
+        \item o-tolyl $$\chemfig[]{*6(-=-(-\chemabove{\ce{CH3}}{})=(\chemabove{}{\bigcdot{}})-=)}$$
+    \end{enumerate}
+
+    \subsubsection{Organische functies of functionele groepen}
+    \begin{enumerate}
+        \item chloroform $$\chemfig[]{Cl-[:30]C(-[:90]H)(<[:-55]Cl)<:[:-20]Cl}$$
+        \item fenol $$\chemfig[]{*6(-=-(-\chemabove{\ce{OH}}{})=-=)}$$
+        \item 2-naftol $$\chemfig{*6(=-*6(-=-(-[:30]OH)=-)=-=-)}$$
+        \item aniline $$\chemfig[]{*6(-=-(-\chemabove{\ce{NH2}}{})=-=)}$$
+        \item formaldehyde (in aq. formol) $$\chemfig[]{\ce{H2C}=O}$$
+        \item acetaldehyde $$\chemfig[]{\ce{H3C}-CH=O}$$
+        \item propionaldehyde $$\chemfig[]{\ce{CH3}-\ce{CH2}-CH=O}$$
+        \item butyraldehyde $$\chemfig[]{\ce{CH3}-\ce{CH2}-\ce{CH2}-\ce{CH}=O}$$
+        \item benzaldehyde $$\chemfig[]{*6(-=-(-\ce{C}(=[:90]O)-[:-30]H)=-=)}$$
+        \item aceton $$\chemfig[]{\ce{CH3}-CO-\ce{CH3}}$$
+        \item acetofenon $$\chemfig[]{*6(-=-(-\ce{C}(=[:90]O)-[:-30]\ce{CH3})=-=)}$$
+        \item bezofenon $$\chemfig[]{*6(-=-(-\ce{C}(=[:90]O)-[:-30]*6(=-=-=-))=-=)}$$
+    \end{enumerate}
 \end{document}
 % Everything in this region will be overriden
