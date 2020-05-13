@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Build script for master documents
 
 import os

@@ -1,0 +1,229 @@
+
+\documentclass[12pt]{article}
+
+\input{preamble.tex}
+
+\begin{document}
+    \maketitle
+
+    \section{ELEKTROMAGNETISME}
+    \subsection{Inleiding}
+    \begin{enumerate}
+        \item Wie is Maxwell? Wat doen de vergelijkingen van Maxwell? Voor welke grote geschiedenis evenement had dit de basis gelegt?
+        \item Geef de eenheden en notatie van de volgende concepten: (Elektrische lading, Ladingsdichtheid, Elektrisch Veld, Magnetisch inductieveld, Elektische stroom, Stroomdichtheid).
+        \item Geef de volgende natuurconstanten: (Permittiviteit van vacuüm, Permeabiliteit van vacuüm, snelheid van het licht).
+        \item Geef de Maxwell vergelijkingen in globale/integrale en lokale/differentiale vorm.
+    \end{enumerate}
+    \subsection{Werktuigen / Toolbox}
+    \begin{enumerate}
+        \item Wat is het doel van dit hoofdstuk? Welke onderwerpen gaan we over gaan? (belangrijk voor structuur te houden)
+        \item \textbf{Geef de intrinsieke definitie van de divergentie van een vectorveld, bespreek de betekenis ervan en geef minimum twee voorbeelden van een natuurwet waarin de divergentie een belangrijke rol speelt. Idem voor de rotatie van een vectorveld.} (HOOFDVRAAG)
+        \item \textbf{Maak de overgang tussen de globale en lokale vorm van de divergentie van een vectorveld en de rotatie van een vectorveld (en/of omgekeerd)} (HOOFDVRAAG)
+        \item \textbf{Geef de intrinsieke definitie van de gradiënt van een scalair veld, bespreek de betekenis ervan en geef minimum twee voorbeelden van een natuurwet waarin de gradiënt een belangrijke rol speelt. Geef en bewijs de eigenschappen van een gradiënt.} (HOOFDVRAAG)
+        \item Wat bedoeld men met een veld? Waaraan is een veld afhankelijk? Geef voorbeelden.
+        \item Wanneer kan je zeggen dat iets in het ander haar veld ligt? Geef een voorbeeld.
+        \item Defineer: Scalair veld. Beschijf scalaire velden in globale en lokale vorm. Geef voorbeelden van scaliare velden.
+        \item bewijs dat $\delta v = \vec{grad}v(\vec{r}) \cdot \vec{dr}$. Bekijk hiervoor $v(\vec{r} + \vec{\delta r})$
+        \item Geef de belangrijke voorbeelden voor de toepassing van de gradiënt. (5)
+        \item Defineer: Vectorveld. Beschrijf vectorvelden in globale en lokale vorm. Geef een voorbeeld van een vectorveld.
+        \item Defineer: Flux van een vectorveld $\Phi_E$ .
+        \item Defineer: Flux voor een open oppervlakte.
+        \item Defineer: Flux voor een gesloten oppervlakte.
+        \item Defineer: Flux van een uniform veld $\vec{E}$ doorheen een vlak met een hoek.
+        \item Defineer: Flux van een algemeen veld $\vec{E}$ doorheen een willekeurig oppervlakte.
+        \item Bereken het waterdebiet doorheen een oppervlakte. Check dit ook met een dimensieanalyse.
+        \item Bereken de elektrische stroom door middel van een fluxintegraal. Check dit ook met een dimensieanalyse.
+        \item Defineer: Flux van een uniform veld $\vec{E}$ doorheen een gesloten oppervlakte.
+        \item Zijn er andere notaties voor de divergentie? ( Tip: ja )
+        \item Defineer: Algemene vorm van een Bilan wet. Geef voorbeelden.
+        \item Geef de differentiaaloperatorgymnastiek? Wat zijn de gevolgen hiervan?
+    \end{enumerate}
+    \subsection{Electrostatica}
+    \begin{enumerate}
+        \item \textbf{Geef de Wet van Coulomb voor de kracht die twee puntladingen op elkaar uitoefenen.} (HOOFDVRAAG)
+        \item \textbf{Toon kwantitatief aan dat elektrische wisselwerkingen, als ze bestaan, altijd veeeel groter zijn dan de effecten van gravitationele wisselwerkingen.} (HOOFDVRAAG)
+        \item Wat is elektrostatica? Wat is het gevolg van deze definitie? Voor wat vormt dit een basis? 
+        \item Wat is een lading? (tricky question)
+        \item Wat zijn de soorten ladingen?
+        \item Wat bedoeld men met: Behoud van lading. Druk dit ook wiskundig uit.
+        \item Hoe heeft men de lading gequantiseerd? Wat bevestigde dit?
+        \item Hoe gaan we voorwerpen een lading geven? Leg uit. Geef voorbeelden.
+        \item Aan wat is de elektrische classificatie van materialen afhankelijk?
+        \item Wat zijn de soorten materialen? Leg uit. geef voorbeelden.
+        \item Welke waarnemingen zorgde voor de Wet van Coulomb.
+        \item Geef de Wet van Coulomb voor de kracht die meerdere puntladingen op elkaar uitoefenen.
+        \item Geef de Wet van Coulomb voor de kracht van een continue lading. Geef hierbij ook de formules voor lineare en een oppervlakte ladingsverdeling.
+        \item Leg uit: Basic principal of why photocopy machines use electrostatics.
+        \item Een menselijk lichaam heeft 65 kg water. Bereken de positieve lading van deze persoon.
+    \end{enumerate}
+    \subsection{Het elektrisch veld in de elektrostatica}
+    \begin{enumerate}
+        \item \textbf{Bereken het elektrisch veld van een dipool (op de as van de dipool en op het middelloodvlak). Geef ook de algemene formule.} (HOOFDVRAAG)
+        \item \textbf{Definieer een elektrische dipool.} (HOOFDVRAAG)
+        \item \textbf{Bereken het krachtmoment (synoniem “koppel”) en de potentiële energie van een elek­trische dipool in een extern (uniform) elektrisch veld. Leg een toepassing hierop ook uit.} (HOOFDVRAAG)
+        \item \textbf{Schets ook kwalitatief wat er gebeurt met een dipool in een niet-uniform elektrisch veld.} (HOOFDVRAAG)
+        \item \textbf{Verklaar kwalitatief hoe via de “Van der Waals” interactie twee ongeladen moleculen elkaar toch kunnen aantrekken.} (HOOFDVRAAG)
+        \item Defineer het elektrisch veld. Wat is de oorzaak van het elektrisch veld? Geef de algemene definitie van het elektrisch veld. Hoe kan ik dit interpreteren? Waarom is dit fout? : $\lim{q_0 \to 0} = \frac{\vec{F}(\vec{r})}{q_0}$
+        \item Geef de 4 eigenschappen van het elektrisch veld. Leg uit waarom / bewijs eventueel / gevolgen (je weet wel)
+        \item Geef de verschillende formules van het elektrisch veld met continue ladingsverdelingen.
+        \item Teken de elektrische veldlijnen van een positieve en negatieve lading.
+        \item Geef de eigenschappen van elektrische veldlijnen.
+        \item Teken de elektische veldlijnen van 2 stilstaande ladingen met: +Q,-Q / +Q,+Q / -Q,+2Q
+        \item Wat is het verband tussen de elektrische velden en divergentie?                                                                             
+        \item Defineer: dipoolmoment + geef voorbeeld
+        \item Wat zijn de voorwaarden van een gebonden lading? Wat kan je hier uit concluderen voor het elektrisch veld?
+        \item Systemen in de natuur streven naar een minimum potentiële energie. Wanneer is dit?
+        \item Wat is de netto kracht van een elektrisch veld tegen over een punt lading? (pos en neg) Wat kan men hieruit concluderen?
+    \end{enumerate}
+    \subsection{De wet van Gauss}
+    \begin{enumerate}
+        \item \textbf{Geef en bespreek de Wet van Gauss in integrale en lokale vorm, en hoe je overgaat van de ene naar de andere.} (HOOFDVRAAG)
+        \item \textbf{Gebruik de Wet van Gauss om het elektrisch veld te berekenen binnen én buiten een diëlektrische sfeer met homogeen verdeelde ladingsdichtheid} (HOOFDVRAAG)
+        \item \textbf{Gebruik deze om het elektrisch veld te berekenen binnen én buiten een diëlektrische sfeer met homogeen verdeelde ladingsdichtheid.} (HOOFDVRAAG)
+        \item \textbf{Bewijs dat een sferisch symmetrische ladings­verdeling, in de ruimte buiten de ladingsverdeling, een elektrisch veld opwekt zoals een puntlading.} (HOOFDVRAAG)
+        \item Wat brengt de Wet van Gauss in verband? Over welke concepten wordt er gesproken bij de Wet van Gauss?
+        \item Wat zegt de Wet van Gauss? Leid deze af met een eenvoudig model.
+        \item Defineer: Gauss oppervlakte
+        \item Wat is de toepassing van de Wet van Gauss? Wat is de strategie voor deze toepassing?
+    \end{enumerate}
+    \subsection*{Wiskundige aanvulling - Drie-voudige integraal in sferische coördinaten}
+    \begin{itemize}
+        \item Geef de algemene transformatie van coördinaten. Geef de transformatieformules.
+        \item Welke stelling gaan we gebruiken voor de transformatie van bolcoördinaten?
+        \item Teken de transformatie van bolcoördinaten. Geef de transformatieformules.
+        \item Bereken de Jacobiaanse determinant voor bolcoördinaten.
+        \item Integreer op een boloppervlakte.
+    \end{itemize}
+    \subsection{De elektrische potentiaal - elektrische spanning}
+    \begin{enumerate}
+        \item \textbf{Wat is de elektrostatische potentiaal (geef de definitie en de fysische betekenis)?} (HOOFDVRAAG)
+        \item \textbf{Hoe kan je uit de potentiaal terug het elektrisch veld berekenen?} (HOOFDVRAAG)
+        \item \textbf{Vertrekken­de van de Wet van Coulomb, bereken de elektrostatische potentiaal opgewekt door een punt­lading Q} (HOOFDVRAAG)
+        \item \textbf{Leg uit hoe je de elektrostatische potentiaal opgewekt door een elektrische dipool kan berekenen. Vergelijk.  } (HOOFDVRAAG)
+        \item Defineer: De potentiële energie uit de klassieke mechanica.
+        \item Defineer: De totale energie:
+        \item Defineer: Veralgemeende definitie van de potentiële energie
+        \item Defineer: elektrische spanning $\Delta V$
+        \item Geef de eigenschappen van de elektrische potentiaal en leg uit.
+        \item Defineer: elektronvolt $eV$
+        \item Bereken het elektrisch veld van een H-kern / H-atoom en een chemische reactie.
+        \item Bereken de elektrische potentiaal van een uniform geladen bol. Leg uit.
+        \item Bereken de elektrische potentiaal van een uniform geladen oneindig grote plaat. Leg uit.
+    \end{enumerate}
+    \subsection{De condensator}
+    \begin{enumerate}
+        \item \textbf{Wat is een condensator? Teken ook een vlakke condensator met de elektrische velden van elke plaat.} (HOOFDVRAAG)
+        \item \textbf{Bereken het elektrisch veld, het potentiaalverschil, de capaciteit en de energie opgeslagen van een vlakke condensator.} (HOOFDVRAAG)
+        \item Stel je hebt een condensator met niet-oneindig grote platen? (AKA realistische condensator). Welk fenomeen treedt er op?
+        \item Defineer: capaciteit $C$ van de condensator.
+        \item Wat zijn de eigenschappen van de capaciteit van de condensator? Bewijs, leg uit, je weet wel
+        \item Bereken het elektrisch veld, potentiaalverschil en capaciteit in een coax-kabel.
+        \item Wat gebeurt er bij het serieschakelen en parallelschakelen van condensatoren? Leg ook het 'fysisch' uit.
+        \item Wat zijn de toepassingen van een condensator? Wat kan je zeggen over de eenheid "Farad"?
+    \end{enumerate}
+    \subsection{Geleiders en isolatoren in elektrostatische omstandigheden}
+    \begin{enumerate}
+        \item \textbf{Wat gebeurt er als er een diëlektricum tussen de platen van een condensator is?} (HOOFDVRAAG)
+        \item \textbf{Is er een verschil tussen de Wet van Gauss in vacuüm en in diëlektrica? Verklaar en bespreek.} (HOOFDVRAAG)
+        \item Wat zijn de elektrische classificatie van de vaste stoffen? Wat is de grote vraag in dit hoofdstuk? Waar ga je een antwoord kunnen vinden?
+        \item Defineer: Hybridisatie. Hoe ga je hier een onderscheid kunnen maken Isolatoren/Geleiders/Halfgeleiders?
+        \item Welk experiment gaf inzicht op de verschillende eigenschappen van geleiders in elektrostatische omstandigheden? Wat waren de waarnemingen van dit experiment?
+        \item Wat zijn de eigenschappen van geleiders in elektrostatische omstandigheden? Bewijs / leg uit / ...
+        \item Wat is Saint Elmo's fire? Leg uit hoe dit fenomeen 
+        \item Welk experiment gaf inzicht op de verschillende eigenschappen van isolatoren in elektrostatische omstandigheden? Wat waren de waarnemingen van dit experiment?
+        \item Wat zijn de eigenschappen van isolatoren in elektrostatische omstandigheden? Bewijs / leg uit / ...
+        \item Defineer: relatieve permittiviteit
+        \item Defineer: diëlektrische suscepttiviteit
+        \item Wat is het verband tussen de relatieve permittiviteit en diëlektrische suscepttiviteit
+        \item Geef de $1^e en 2^e$ Maxwellvergelijking. Wat is het verschil tussen deze twee?
+    \end{enumerate}
+    \subsection{Inleiding tot het magnetisme}
+    \begin{enumerate}
+        \item Geef korte historie over het magnetisme.
+        \item Wat zijn de oorzaken van een magnetisch inductieveld?
+        \item Geef de magnetische classificatie van materialen. Licht deze toe.
+        \item Wat zijn de belangrijkste dingen dat je voor altijd moet onthouden over het magnetisme?
+        \item Defineer: Lorentzkracht, Magnetische kracht. Voer ook een dimensieanalyse uit op de nieuwe constante.
+        \item Wat is de relatie tussen $\epsilon_0$ en $\mu_0$?
+        \item Wat is de relatieve sterkte van de magnetische kracht? Waarom wordt de magnetische kracht gezien als een relativistisch effect? Verkracht de magnetische kracht de derde wet van Newton? Waarom zou je dit kunnen denken?
+        \item Geef en bewijs de voorwaarde dat $\vec{F}_{21,magnetisch} = -\vec{F}_{12,magnetisch}$
+        \item Defineer: magnetisch inductieveld
+        \item Wat zijn de eigenschappen van de magnetische kracht op een puntlading?
+            \item Teken de magnetische kracht bij: 
+            \begin{enumerate}
+                \item $\vec{B}$ naar rechts; $\vec{v}$ naar rechts; lading positief
+                \item $\vec{B}$ naar rechts; $\vec{v}$ naar boven; lading positief
+                \item $\vec{B}$ in blad; $\vec{v}$ naar rechts; lading positief
+                \item $\vec{B}$ in blad; $\vec{v}$ naar rechts; lading negatief
+            \end{enumerate}
+        \item Bespreek het magnetisch inductieveld van een positieve puntlading in de oorsprong met snelheid $\vec{v}$ lang de +x-as. 
+        \item Bespreek dimensies en eenheden van het magnetisch inductieveld en magnetische flux.
+        \item $\vec{B}_{aarde} =\: ?$
+        \item Bespreek 2e Maxwellvergelijking in lokale en globale vorm.
+    \end{enumerate}
+    \subsection{Beweging van een lading in een constant magnetisch inductieveld}
+    \begin{enumerate}
+        \item \textbf{Bespreek de beweging van een lading in een constant magnetisch veld. Onderscheid verschillende gevallen (snelheid loodrecht op het magnetisch inductieveld, of niet). Bespreek de beweging van een lading in een (constant) magnetisch en elektrisch veld die loodrecht op elkaar staan. Geef van alle gevallen voorbeelden en/of toepassingen.} (HOOFDVRAAG)
+        \item Wat is de probleemstelling bij de beweging van een lading in een constant uniform $\vec{B}-veld$? Geef hierbij ook de belangrijkste beschrijvingen al zonder te bewijzen.
+        \item Bereken de bewegingsvergelijkingen bij de vorige vraag. Wat kan je hier uit concluderen? Pas toe op een proton en elektron.
+        \item Leg uit: Snelheidsselector
+        \item Leg uit: Massaspectrometer
+        \item Leg uit: Cyclotron
+        \item Defineer: cyclotronpulsatie
+        \item Defineer: Larmor-straal
+    \end{enumerate}
+    \subsection{Magnetostatica - de fysica van constante elektrische stromen}
+    \begin{enumerate}
+        \item \textbf{Wat is elektrische stroom?} (HOOFDVRAAG)
+        \item \textbf{Wat zegt de wet van Ohm?} (HOOFDVRAAG)
+        \item \textbf{Geef en bespreek het Drude-model voor de geleidbaarheid (of “conductiviteit”).} (HOOFDVRAAG)
+        \item \textbf{Geef het verband tussen de weerstand van een lange rechte draad en de “resistiviteit” (definieer “resistiviteit”) van het materiaal.} (HOOFDVRAAG)
+        \item Geef korte historie over het magnetostatica.
+        \item Deferineer: Elektrische stroomdichtheid (op 2 manieren)
+        \item Bepaal de grootte van de driftsnelheid van de elektronen doorheen een draad van jouw elektriciteitsinstallatie thuis (koper). $d=1mm, I=0.1A$
+        \item Bewijs de wet van Pouillet.
+        \item Wat is de grote orde van de resistiviteit van geleiders?
+        \item Defineer: Elektrisch vermogen
+    \end{enumerate}
+    \subsection{De wet van Biot-Savart - Constante stromen en magnetische velden}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{De wet van Ampère}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{Samenvatting van de elektrostatica - magnetostatica}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{De wet van Faraday-Lenz - Elektromagnetische inductie}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{Inductantie en elektrische kringen}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{INTERMEZZO - Magnetische materialen}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{De Maxwell-vergelijkingen - Samenvatting van de klassieke fysica}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{De theorie - Eigenschappen van elektromagnetische straling in vacuüm}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{Energie in elektromagnetische straling - De stelling van Poynting}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    \subsection{Het experiment - Golfkarakter van elektromagnetische straling}
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+    
+\end{document}
