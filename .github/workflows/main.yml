@@ -45,3 +45,8 @@ jobs:
         args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
         # Install extra packages by tlmgr
         extra_packages: chemfig amsmath babel mhchem # optional
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: chemiepdf
+        path: chemie/master.pdf
