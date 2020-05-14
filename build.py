@@ -49,7 +49,7 @@ elif not sys.argv[1] in DIRS:
 
 SELECTED_DIR = sys.argv[1]
 MASTER_FILENAME = f"{SELECTED_DIR}/master.tex"
-IGNORE_FILENAMES = ["master.tex"]
+IGNORE_FILENAMES = ["master.tex", "preamble.tex"]
 tex_regex = re.compile(r"\.tex$")
 COMPILE_FILENAMES = [f"{SELECTED_DIR}/{x}" for x in os.listdir(SELECTED_DIR) if tex_regex.search(x) is not None and not x in IGNORE_FILENAMES]
 COMPILE_FILENAMES.sort()
