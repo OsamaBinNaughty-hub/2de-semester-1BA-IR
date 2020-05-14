@@ -44,4 +44,4 @@ jobs:
         # Extra arguments to be passed to the LaTeX engine
         args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
         # Install extra packages by tlmgr
-        extra_packages: chemfig amsmath babel mhchem graphicx enumerate # optional
+        extra_packages: chemfig amsmath babel mhchem # optional
