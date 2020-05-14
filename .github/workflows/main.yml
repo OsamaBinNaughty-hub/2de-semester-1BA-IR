@@ -22,17 +22,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
+    # Build all masters
+    - name: Build all masters
+      run: python3 build.py golven && python3 build.py chemie && python3 build.py milieu && python3 build.py analyse && python3 build.py mechanica
 
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-        
-    - name: LaTeX Action
+    # Build chemie
+    - name: LaTeX Action Chemie
       uses: fudan-mse/latex-action@v0.0.1
       with:
         # The root LaTeX file to be compiled
@@ -45,8 +40,88 @@ jobs:
         args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
         # Install extra packages by tlmgr
         extra_packages: chemfig amsmath babel mhchem # optional
-    
+     
     - uses: actions/upload-artifact@v2
       with:
         name: chemiepdf
         path: chemie/master.pdf
+
+    # Build golven
+    - name: LaTeX Action Golven
+      uses: fudan-mse/latex-action@v0.0.1
+      with:
+        # The root LaTeX file to be compiled
+        root_file: master.tex
+        # The working directory for the LaTeX engine
+        working_directory: golven/ # optional
+        # The LaTeX engine to be invoked
+        compiler: latexmk # optional, default is latexmk
+        # Extra arguments to be passed to the LaTeX engine
+        args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
+        # Install extra packages by tlmgr
+        extra_packages: amsmath babel # optional
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: golvenpdf
+        path: golven/master.pdf
+        
+    # Build milieu
+    - name: LaTeX Action Milieu
+      uses: fudan-mse/latex-action@v0.0.1
+      with:
+        # The root LaTeX file to be compiled
+        root_file: master.tex
+        # The working directory for the LaTeX engine
+        working_directory: milieu/ # optional
+        # The LaTeX engine to be invoked
+        compiler: latexmk # optional, default is latexmk
+        # Extra arguments to be passed to the LaTeX engine
+        args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
+        # Install extra packages by tlmgr
+        extra_packages: amsmath babel # optional
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: miliepdf
+        path: milieu/master.pdf
+        
+    # Build analyse
+    - name: LaTeX Action Analyse
+      uses: fudan-mse/latex-action@v0.0.1
+      with:
+        # The root LaTeX file to be compiled
+        root_file: master.tex
+        # The working directory for the LaTeX engine
+        working_directory: analyse/ # optional
+        # The LaTeX engine to be invoked
+        compiler: latexmk # optional, default is latexmk
+        # Extra arguments to be passed to the LaTeX engine
+        args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
+        # Install extra packages by tlmgr
+        extra_packages: amsmath babel # optional
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: analysepdf
+        path: analyse/master.pdf
+        
+    # Build Mechanica        
+    - name: LaTeX Action Mechanica
+      uses: fudan-mse/latex-action@v0.0.1
+      with:
+        # The root LaTeX file to be compiled
+        root_file: master.tex
+        # The working directory for the LaTeX engine
+        working_directory: mechanica/ # optional
+        # The LaTeX engine to be invoked
+        compiler: latexmk # optional, default is latexmk
+        # Extra arguments to be passed to the LaTeX engine
+        args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
+        # Install extra packages by tlmgr
+        extra_packages: amsmath babel # optional
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: mechanicapdf
+        path: mechanica/master.pdf
