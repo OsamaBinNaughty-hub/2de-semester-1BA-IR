@@ -38,7 +38,7 @@ jobs:
         # The root LaTeX file to be compiled
         root_file: chemie/master.tex
         # The working directory for the LaTeX engine
-        working_directory: . # optional
+        working_directory: chemie/ # optional
         # The LaTeX engine to be invoked
         compiler: latexmk # optional, default is latexmk
         # Extra arguments to be passed to the LaTeX engine
