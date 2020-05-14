@@ -36,7 +36,7 @@ jobs:
       uses: fudan-mse/latex-action@v0.0.1
       with:
         # The root LaTeX file to be compiled
-        root_file: chemie/master.tex
+        root_file: master.tex
         # The working directory for the LaTeX engine
         working_directory: chemie/ # optional
         # The LaTeX engine to be invoked
