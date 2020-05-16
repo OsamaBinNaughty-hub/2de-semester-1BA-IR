@@ -1,5 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 
+\usepackage[margin=1in]{geometry}
 \input{preamble.tex}
 
 \begin{document}
@@ -7,9 +8,9 @@
     % Only things after \maketitle are added to master, all other things should be put in preamble
     \maketitle
 
-    \subsection{Chemie - Eigennamen van organische structuren}
+    \section{Chemie - Eigennamen van organische structuren}
 
-    \subsubsection{Koolwaterstoffen}
+    \subsection{Koolwaterstoffen}
     \begin{enumerate}
         \item isobutaan $$\chemfig[angle increment=30]{-[1](-[-1])-[3]}$$
         \item isopentaan $$\chemfig[angle increment=30]{-[1](-[-1]-[1])-[3]}$$
@@ -33,7 +34,21 @@
         \item o-tolyl $$\chemfig[]{*6(-=-(-\chemabove{\ce{CH3}}{})=(\chemabove{}{\bigcdot{}})-=)}$$
     \end{enumerate}
 
-    \subsubsection{Organische functies of functionele groepen}
+    \subsection{Organische functies of functionele groepen}
+    \begin{center}
+        {\small 
+        \begin{tabular}{ c c c c c c } 
+         \hline
+         $\chemfig[]{\ce{R}-}$ & $\chemfig[]{\ce{R}-COOH}$ & $\chemfig[]{\ce{R}-COO^{(-)}}$ & $\chemfig[]{\ce{R}-COX}$ & $\chemfig[]{\ce{R}-\ce{CONH2}}$ & $\chemfig[]{\ce{R}-}$ \\ 
+         $\chemfig[]{\ce{H}-}$ & mierenzuur & formiaat & formyl halogenide & formamide & formonitril \\ 
+         $\chemfig[]{\ce{CH3}-}$ & azijnzuur & acetaat & acetyl halogenide & acetamide & acetonitril \\ 
+         $\chemfig[]{\ce{CH3CH2}-}$ & propionzuur & propionaat & propionyl halogenide & propionamide & propionitril\\
+         $\chemfig[]{\ce{CH3CH2CH2}-}$ & boterzuur & butyraat & butyryl halogenide & butyramide & butyronitril \\
+         $\chemfig[]{\ce{C6H5}-}$ & benzoëzuur & benzoaat & benzonyl halogenide & benzamide & benzonitril \\
+         \hline
+        \end{tabular}
+        }
+        \end{center}
     \begin{enumerate}
         \item chloroform $$\chemfig[]{Cl-[:30]C(-[:90]H)(<[:-55]Cl)<:[:-20]Cl}$$
         \item fenol $$\chemfig[]{*6(-=-(-\chemabove{\ce{OH}}{})=-=)}$$
