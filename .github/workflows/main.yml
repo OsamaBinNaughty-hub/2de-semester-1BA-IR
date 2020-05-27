@@ -24,7 +24,7 @@ jobs:
 
     # Build all masters
     - name: Build all masters
-      run: python3 build.py golven && python3 build.py chemie && python3 build.py milieu && python3 build.py analyse && python3 build.py mechanica
+      run: python3 build.py golven && python3 build.py chemie && python3 build.py milieu && python3 build.py analyse && python3 build.py mechanica && python3 build.py formules
 
     # Build chemie
     - name: LaTeX Action Chemie
