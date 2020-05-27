@@ -24,7 +24,7 @@ jobs:
 
     # Build all masters
     - name: Build all masters
-      run: python3 build.py golven && python3 build.py chemie && python3 build.py milieu && python3 build.py analyse && python3 build.py mechanica
+      run: python3 build.py golven && python3 build.py chemie && python3 build.py milieu && python3 build.py analyse && python3 build.py mechanica && python3 build.py formules
 
     # Build chemie
     - name: LaTeX Action Chemie
@@ -125,3 +125,23 @@ jobs:
       with:
         name: mechanicapdf
         path: mechanica/master.pdf
+    
+    # Build Formularium        
+    - name: LaTeX Action Formularium
+      uses: fudan-mse/latex-action@v0.0.1
+      with:
+        # The root LaTeX file to be compiled
+        root_file: master.tex
+        # The working directory for the LaTeX engine
+        working_directory: formules/ # optional
+        # The LaTeX engine to be invoked
+        compiler: latexmk # optional, default is latexmk
+        # Extra arguments to be passed to the LaTeX engine
+        args: -pdf -file-line-error -interaction=nonstopmode # optional, default is -pdf -file-line-error -interaction=nonstopmode
+        # Install extra packages by tlmgr
+        extra_packages: amsmath babel physics # optional
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: formulariumpdf
+        path: formules/master.pdf
