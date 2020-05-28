@@ -5,7 +5,7 @@ import os
 import sys
 import re
 
-EXCLUDED_DIRS = [".git"]
+EXCLUDED_DIRS = [".git", ".github", ".vscode"]
 DIRS = [x for x in os.listdir() if os.path.isdir(x) and not x in EXCLUDED_DIRS]
 
 # Help menu
@@ -51,7 +51,9 @@ SELECTED_DIR = sys.argv[1]
 MASTER_FILENAME = f"{SELECTED_DIR}/master.tex"
 IGNORE_FILENAMES = ["master.tex", "preamble.tex"]
 tex_regex = re.compile(r"\.tex$")
-COMPILE_FILENAMES = [f"{SELECTED_DIR}/{x}" for x in os.listdir(SELECTED_DIR) if tex_regex.search(x) is not None and not x in IGNORE_FILENAMES]
+COMPILE_FILENAMES = [f"{SELECTED_DIR}/{x}"
+    for x in os.listdir(SELECTED_DIR)
+    if tex_regex.search(x) is not None and not x in IGNORE_FILENAMES and not x.startswith("_")]
 COMPILE_FILENAMES.sort()
 
 # Read file
