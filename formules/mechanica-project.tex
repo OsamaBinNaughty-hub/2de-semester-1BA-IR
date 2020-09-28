@@ -11,7 +11,11 @@
 	\begin{enumerate}
 		\item Translatiefunctie: $ T_{\vec{a}}(A) = A' \iff \vec{OA'} = \vec{OA} + \vec{a} $
 		\item Eigs rotatie om dezelfde as d: $ R_{\phi_2}^d \cdot R_{\phi_1}^d = R_{\phi_1 + \phi_2}^d = R_{\phi_1}^d \cdot R_{\phi_2}^d $
-	\item Rotatie is een isomorphisme: $ M_{\phi + \psi} = M_{\psi} \cdot M_{\phi} $
+		\item Rotatie is een isomorphisme: $ M_{\phi + \psi} = M_{\psi} \cdot M_{\phi} $
+		\item Formule van Rodrigues: $ \vec{r}' = r(\vec{1}_k \cdot \vec{1}_r)\vec{1}_k (1 - \cos\phi) + r\cos\phi \vec{1}_r + r(\vec{1}_k \cross \vec{1}_r) \sin\phi $
+		\item Definitie euler parameters: $ e_0 = \cos\frac{\phi}{2}; \vec{e} = \vec{1}_k \sin\frac{\phi}{2} $
+		\item Formule Rodrigues euler parameters: $ \vec{1}_r' = 2\vec{e}(\vec{e}\cdot \vec{1}_r + (2e_0^2 - 1)\vec{1}_r + 2e_0(\vec{e}\cross \vec{1}_r) $
+		\item $ e_0 $ uit matrixvorm formule Rodrigues: $ e_0^2 = \frac{Sp(R) + 1}{4} $
 	\end{enumerate}
 	
 \end{document}
