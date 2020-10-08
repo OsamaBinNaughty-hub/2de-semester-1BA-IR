@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+\input{preamble.tex}
+
+\begin{document}
+\date{}    
+\maketitle
+    \section*{Hoofdstuk 1: Vectorruimten}
+    Vetgedrukte vragen zijn vragen gesteld in vorige examens.
+    \subsection*{Te bewijzen stellingen}
+    \begin{enumerate}
+        \item \textbf{(1.2.2.)} Zij $W$ een niet-lege deelverzameling van de vectorruimte $V$. Dan zijn de volgende uitspraken equivalent: \begin{enumerate}
+            \item $W$ is een deelruimte van $V$;
+            \item $\forall \vec{a},\vec{b} \in W, \forall \alpha \in \mathbb{K}: \vec{a}+\vec{b} \in W \, en \, \alpha \vec{a} \in W$;
+            \item $\forall \vec{a},\vec{b} \in W, \forall \alpha , \beta \in \mathbb{K}: \alpha \vec{a} + \beta \vec{b} \in W$;
+            \item voor $\vec{a}_1,\dots,\vec{a}_n \in W \, en \, \alpha_1,\dots,\alpha_n \in \mathbb{K}$ geldt dat $\sum^n_{i=1}\alpha_i\vec{a}_i$
+        \end{enumerate}
+        \item \textbf{(1.2.3.4)} Als $W_1$ en $W_2$ deelruimten zijn van $V$, dan is ook $W_1 \cap W_2$ een deelruimte van $V$.
+        \item \textbf{(1.2.3.5)} Als $W_1$ en $W_2$ deelruimten zijn van $V$, dan is ook $W_1 + W_2$ een deelruimte van $V$. Kan je dit veralgemenen?
+        \item \textbf{(1.2.4.)} Indien $\{ W_i \, | \, i \in I\}$ een verzameling deelruimten van een vectorruimte $V$ is, dan is $W=\bigcap_{i \in I}W_i$ ook een deelruimte van $V$.
+        \item \textbf{\textbf{(1.2.5.)} Onderstel dat $\emptyset \neq A \subset V$. Dan is $$\left\{ vect(A)= \sum_{i = 1}^n \alpha_i \vec{a}_i \, | \, n \in \mathbb{N}_0 , \alpha_i \in \mathbb{K} , \vec{a}_i \in A\right\}$$ Wat gebeurt er als $A = \emptyset$?}
+        \item \textbf{(1.2.7.)} Indien $W_1$ en $W_2$ twee deelruimten zijn van $V$ zijn, dan geldt $$vect(W_1+W_2)=W_1+W_2$$ waarbij $W_1+W_2 \in W \, en \, W_1+W_2 \subset W$ 
+        \item \textbf{\textbf{(1.2.9.)} Een vectorruimte $W$ is de directe som van twee van haar deelruimten $W_1$ en $W_2$ als en slechts als elk element van $W$ op een \textbf{unieke} manier kan geschreven worden als de som van een element van $W_1$ en een element van $W_2$, m.a.w. als $$\forall \vec{w} \in W, \exists ! \vec{w}_1 \in W_1,\exists ! \vec{w}_2 \in W_2 : \vec{w}=\vec{w}_1+\vec{w}_2$$}
+        \item \textbf{(1.3.2.)} $\{\vec{a}_1,\dots,\vec{a}_n\}$ is lineair afhankelijk als en slechts als één van de vectoren $\vec{a}_1,\dots,\vec{a}_n$ een lineaire combinatie is van de overige.
+        \item \textbf{(1.3.3.)} $\{\vec{a}_1,\dots,\vec{a}_n\}$ is lineair afhankelijk als en slechts als één van de vectoren $\vec{a}_1,\dots,\vec{a}_n$ een lineaire combinatie is van de voorgaande.
+        \item \textbf{\textbf{(1.3.4.)} De volgende eigenschappen zijn equivalent: \begin{enumerate}
+            \item $\{\vec{a}_1,\dots,\vec{a}_n\}$ is lineair onafhankelijk;
+            \item geen enkel van de vectoren $\vec{a}_1,\dots,\vec{a}_n$ een lineaire combinatie is van de overige;
+            \item geen enkel van de vectoren $\vec{a}_1,\dots,\vec{a}_n$ een lineaire combinatie is van de vorige;
+        \end{enumerate}}
+        \item \textbf{(1.4.2.)} $B=\{\vec{b}_1,\dots,\vec{b}_n\}\subset V$ is een basis van $V$ als en slechts als elke vector $\vec{v}$ van $V$ op een unieke manier kan geschreven worden als een lineaire combinatie van de vectoren $\vec{b}_i$: $$\forall \vec{v} \in V, \exists ! \alpha_1,\dots,\alpha_n \in \mathbb{K}: \vec{v}=\sum_{i=1}^n \alpha_i\vec{b}_i$$
+        \item \textbf{(1.4.4.)} Onderstel dat een eindig deel $A= \{\vec{a}_1,\dots,\vec{a}_n\}$ de vectorruimte $V$ voortbrengt. Dan bestaat er een basis $B$ van $V$ die bevat is in $A$.
+        \item \textbf{(1.4.6.)} Als $B=\{\vec{b}_1,\dots,\vec{b}_n\}$ een basis is voor $V$, en $S= \{\vec{v}_1,\dots,\vec{v}_r\}$ een lineair onafhankelijke verzameling in $V$, dan is $r \le n$.
+        \item \textbf{(1.4.7.)} Als $B_1=\{\vec{b}_1,\dots,\vec{b}_n\}$ en als $B_2=\{\vec{c}_1,\dots,\vec{c}_m\}$ twee basissen zijn van de vectorruimte $V$, dan is $m = n$. Alle basissen hebben dus hetzelfde aantal elementen.
+        \item \textbf{(1.4.10.)} Onderstel dat $dim(V)=n$. Als $B$ een maximaal lineair onafhankelijk deel van $V$ is, dan is $B$ een basis, en dan bevat $B$ juist $n$ elementen.
+        \item \textbf{(1.4.11.)} Als $dim(V)=n$, en $vect(B)=V$, dan bevat $B$ tenminste n vectoren.
+        \item \textbf{(1.4.12.)} Onderstel $dim(V)=n$, en $B \subset V$ bestaande uit $m$ elementen. $$m<n \Rightarrow B \, niet \, voortbrengend$$ $$m>n \Rightarrow B \, lineair \, afhankelijk$$
+        \item \textbf{(1.4.13.)} Als $dim(V)=n$, en $S= \{\vec{v}_1,\dots,\vec{v}_m\}\subset V$ lineair onafhankelijk. Dan bestaat er een basis $B$ van $V$ die $S$ bevat.
+        \item \textbf{(1.4.14.)} Onderstel dat $dim(V)=n$, en dat $B \subset V$ bestaat uit $n$ elementen. Dan hebben we \begin{enumerate}
+            \item $B$ lineair onafhankelijk $\Rightarrow$ $B$ basis voor $V$;
+            \item $vect(B)=V$ $\Rightarrow$ $B$ basis voor $V$;
+        \end{enumerate}
+        \item \textbf{(1.4.16.)} Onderstel $V$ eindigdimensionaal en $W$ een deelruimte van $V$. Dan is $W$ ook eindigdimensionaal, en $dim(W) \le dim(V)$. Als $dim(W) = dim(V)$ dan is $V=W$.
+        \item \textbf{(1.5.1.)} Onderstel dat $W$ een eindigdimensionale vectorruimte is met basis $B_1=\{\vec{b}_1,\dots,\vec{b}_n\}$. Neem $1 \le k \le n$, en stel $$\begin{cases} W_1 = vect\{\vec{b}_1,\dots,\vec{b}_k\} \\ W_2 = vect\{\vec{b}_{k+1},\dots,\vec{b}_n\} \end{cases}$$ Dan is $W=W_1 \oplus W_2$
+        \item \textbf{\textbf{(1.5.2.)} Onderstel dat $W_1$ en $W_2$ twee eindigdimensionale deelruimten van $W$ zijn en dat $W_1 \cap W_2 = \{ \vec{0} \}$. Dan is $$dim(W_1 \oplus W_2) = dim(W)+dim(W_2)$$}
+        \item \textbf{\textbf{(1.5.3.)} Eerste dimensiestelling}.
+    \end{enumerate}
+    \subsection{Reële en complexe vectorruimten}
+    \begin{enumerate}
+        \item \textbf{Wat is een vectorruimte.}
+        \item Wat is een commutatieve groep?
+        \item Defineer de vectoren en scalairen van de vectorruimte. Wat is een reële- en complexe vectorruimte?
+        \item Defineer een aftrekking in de vectorruimte.
+        \item Wat zijn de Axioma's van de vectorruimte? 
+        \item Wat betekent $\mathbb{F}_{p^n}$ ?
+        \item Kan een vectorruimte leeg zijn? Waarom?
+        \item Wat betekent $\mathbb{R}^A$ , $\mathbb{R}[X]$ en $\mathbb{R}_n[X]$? 
+        \item Wat is de restrictie van scalairen?
+    \end{enumerate}
+    \subsection{Deelruimte en directe som van vectorruimten}
+    \begin{enumerate}
+        \setcounter{enumi}{9}
+        \item Wat betekent $\mathbb{R}_n[X] \subset \mathbb{R}[X]$ ?
+        \item \textbf{Wat is een deelruimte?}
+        \item \textbf{Met welk criterium kunnen we gemakkelijk zien of W een deelruimte is van V?}
+        \item Als $W_1$ en $W_2$ deelruimten zijn van $V$ $\Rightarrow ... ?$ (welke zijn dan ook een deelruimte?)
+        \item Indien $\{ W_i \, | \, i \in I\}$ een verzameling deelruimten van een vectorruimte $V$ is $\Rightarrow ... ?$
+        \item Wat is een lineaire combinatie?
+        \item Wat zijn triviale en echte deelruimten?
+        \item Waarom deelruimte? : \begin{itemize}
+            \item $\zeta[a,b] = \{f:[a,b] \rightarrow \mathbb{R} \,|\, f \, continu\}$ is een deelruimte van $\mathbb{R}^{[a,b]}$
+            \item $\mathbb{R}$ is een deelruimte van $\mathbb{C}$
+            \item $\mathbb{R}_n[X]$ is een deelruimte van $\mathbb{R}[X]$
+        \end{itemize}
+        \item Leg uit waarom $X$ de vectorruimte voorgebracht door $A$ is. Is er een explicitete beschrijving van $vect(A)$?
+        \item \textbf{Wat zijn de eigenschappen van een voortbrengende vectorruimte?}
+        \item $vect(W_1 \cup W_2) = ...?$. Welke voorwaarden hebben de vecorruimten $W_1$ en $W_2$ nodig voor deze 
+        \item \textbf{Defineer de directe som?}
+        \item Een vectorruimte $W$ is de directe soms van twee van haar deelruimten $W_1$ en $W_2$ $\Leftrightarrow ...?$
+        \item Wat betekent $\mathbb{K}\vec{a}$?
+        
+    \end{enumerate}
+    \subsection{Lineaire onafhankelijkheid}
+    \begin{enumerate}
+        \setcounter{enumi}{23}
+        \item Leg lineair afhankelijkheid en onafhankelijkheid uit met de vectoren $\vec{a}, \vec{b}$ en met de vectoren $\vec{a}, \vec{b} , \vec{c}$.
+        \item Defineer lineair afhankelijkheid.
+        \item Wat zijn de eigenschappen van een lineaire onafhankelijke verzameling?
+    \end{enumerate}
+    \subsection{Basis en dimensie}
+    \begin{enumerate}
+        \setcounter{enumi}{26}
+        \item Defineer een basis van een vectorruimte.
+        \item $B=\{\vec{b}_1,\dots,\vec{b}_n\}\subset V$ is een basis van $V$ $\Leftrightarrow ...?$
+        \item Wat is een standaardbasis van een vectorruimte en waarom is deze met zekerheid een basis?
+        \item Onderstel dat een eindig deel $A= \{\vec{a}_1,\dots,\vec{a}_n\}$ de vectorruimte $V$ voortbrengt $\Rightarrow ...?$
+        \item Defineer $\emptyset$
+        \item Wat betekent eindigdimensionaal?
+        \item Waarom is $\mathbb{R}[X]$ oneindigdimensionaal?
+        \item Hoeveel basissen heeft een vectorruimte?
+        \item Als $B=\{\vec{b}_1,\dots,\vec{b}_n\}$ een basis is voor $V$, en $S= \{\vec{v}_1,\dots,\vec{v}_r\}$ een lineair onafhankelijke verzameling in $V$ $\Rightarrow ...?$
+        \item Als $B_1=\{\vec{b}_1,\dots,\vec{b}_n\}$ en als $B_2=\{\vec{c}_1,\dots,\vec{c}_m\}$ twee basissen zijn van de vectorruimte $V$ $\Rightarrow ...?$
+        \item \textbf{Defineer de dimensie van een eindigdimensionale $\mathbb{K}$-vectorruimte. Waarom is deze zo goed gedefineerd?}
+        \item Wat is de basis en dimensie van: \begin{enumerate}
+            \item $\mathbb{K}$
+            \item $\mathbb{C}$
+            \item $\mathbb{R}_n[X]$
+            \item $\mathbb{C}^n$
+        \end{enumerate}
+        \item Onderstel dat $dim(V)=n$. Als $B$ een maximaal lineair onafhankelijk deel van $V$ is $\Rightarrow ...?$ (Wat kan men zeggen over B?)
+        \item Als $dim(V)=n$, en $vect(B)=V$ $\Rightarrow ...?$
+        \item Onderstel $dim(V)=n$, en $B \subset V$ bestaande uit $m$ elementen $\Rightarrow ...?$
+        \item Als $dim(V)=n$, en $S= \{\vec{v}_1,\dots,\vec{v}_m\}\subset V$ lineair onafhankelijk $\Rightarrow ...?$
+        \item Onderstel dat $dim(V)=n$, en dat $B \subset V$ bestaat uit $n$ elementen $\Rightarrow ...?$
+        \item Onderstel $V$ eindigdimensionaal en $W$ een deelruimte van $V$ $\Rightarrow ...?$
+        \item Is $B=\{\vec{a}=(1,2,3), \vec{b}=(1,0,1), \vec{c}=(2,3,4)\}$ een basis van $\mathbb{R}^3$ ?
+    \end{enumerate}
+    \subsection{Eerste dimensiestelling}
+    \begin{enumerate}
+        \setcounter{enumi}{45}
+        \item Welke eigenschappen heeft men nodig om de eerste dimensiestelling te bewijzen?
+        \item Geef de eerste dimensiestelling.
+    \end{enumerate}
+\end{document}
