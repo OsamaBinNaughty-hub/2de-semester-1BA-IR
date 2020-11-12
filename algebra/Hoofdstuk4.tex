@@ -9,7 +9,144 @@
     Vetgedrukte vragen zijn vragen gesteld in vorige examens.
     \setcounter{section}{4}
     \subsection*{Te bewijzen stellingen}
+    \begin{enumerate}
+        \item \textbf{(4.1.1)} Voor elke verzameling $A$ is $(S(A), \circ)$ een groep. Deze groep wordt de symmetrische groep van de verzameling $A$ genoemd.
+        \item \textbf{(4.1.2)} Onderstel dat $A$ een eindige verzameling is, en dat $\#(A)=n$. Dan is $\#(S(A))=n!$.
+        \item \textbf{(4.1.4)} Onderstel dat $A$ een eindige verzameling is. Dan geldt: $$\forall \sigma \in S(A), \forall a \in A, \exists m \geq 1: \sigma^m(a)=a$$
+        \item \textbf{(4.1.5)} Elke permutatie van een eindige verzameling A kan geschreven worden als een samenstelling van verwisselingen.
+        \item \textbf{(4.1.7)} Onderstel dat $a,b \in A$ en $\sigma \in S(A)$. Dan geldt dat $$\varepsilon([a,b]\circ \sigma) = -\varepsilon(\sigma)$$
+        \item \textbf{(4.1.8)} Als $\sigma \in S(A)$ kan geschreven worden als de samestelling van $p$ verwisselingen, dan is $$\varepsilon(\sigma)=(-1)^p$$ De afbeelding $\varepsilon:S(A) \rightarrow \{-1,1\}$ voldoet aan volgende eigenschap: $$\varepsilon(\sigma)=\varepsilon(\sigma)\varepsilon(\tau)$$ voor elke $\sigma,\tau \in S(A)$.
+        \item \textbf{(4.2.2)} Onderstel dat de afbeelding $d:M_{n,n}(\mathbb{K}) \rightarrow \mathbb{K}$ multilineair en alternerend is. Dan gelden de volgende eigenschappen: \begin{enumerate}
+            \item $d(A)$ verandert van teken als we twee kolommen met elkaar verwisselen: $$d(A_1 \ A_2 \ \dots \ A_j \ \dots \ A_n) = -d( A_1 \ A_2 \ \dots \ A_j \ \dots \ A_i \ \dots \ A_n)$$
+            \item $d(A)$ verandert niet als we bij een kolom een lineaire combinatie van de andere kolommen optellen: $$d(A_1 \ A_2 \ \dots A_i+\sum_{j\neq 1}\alpha_j A_j \ \dots \ A_n)=d(A_1 \ A_2 \ \dots \ A_i \ \dots A_n)$$
+            \item $d(A)=0$ als één van de kolommen van $A$ gelijk is aan $0$: $$d(A_1 \ A_2 \ \dots \ 0 \ \dots \ A_n)=0$$
+            \item Als we de kolommen van $A$ permuteren, dan wordt $d(A)$ vermenigvuldigd met de pariteit van de toegepaste permutatie: $$d(A_{\sigma(1)} \ A_{\sigma(2)} \ \dots \ A_{\sigma(n)})= \varepsilon(\sigma)d(A_1 \ A_2 \ \dots \ A_n)$$ voor elke $\sigma \in S_n$.
+            \item Als $rg(1)<n$ dan is $d(A)=0$.
+        \end{enumerate}
+        \item \textbf{\textbf{(4.2.4)} Er bestaat juist één determinantafbeelding $M_{n,n}(\mathbb{K}) \rightarrow \mathbb{K}$, en deze wordt gegeven door formule $$det(A)= \sum_{\sigma \in S_n} \varepsilon(\sigma)a_{\sigma(1)1}a_{\sigma(2)2} \dots a_{\sigma(n)n}$$}
+        \item \textbf{\textbf{(4.2.5)} De determinant van een matrix is gelijk aan die van zijn getransponeerde: $$det(A)=det(A^t)$$}
+        \item \textbf{(4.2.6)} De volgende eigenschappen gelden voor de rijen van een matrix: \begin{enumerate}
+            \item De determinant is multilineair als functie van de rijen van $A$;
+            \item $det(A)$ verandert van teken als we twee rijen met elkaar verwisselen;
+            \item $det(A)$ verandert niet als we bij een rij een lineaire combinatie van de andere rijen optellen;
+            \item $det(A)=0$ als een van de rijen van $A$ gelijk is aan $0$;
+            \item Als we de rijen van $A$ permuteren, dan wordt $det(A)$ vermenigvuldigd met de pariteit van de toegepaste permutatie. 
+        \end{enumerate}
+        \item \textbf{(4.2.7)} Als $d:M_{n,n}(\mathbb{K}) \rightarrow \mathbb{K}$ een multilineaire alternerende afbeelding is, dan is $d=d(I_n)$ determinant.
+        \item \textbf{\textbf{(4.2.8)} Voor $A,B \in M_{n,n}(\mathbb{K})$ geldt dat $$det(AB)=det(A)det(B)$$}
+        \item \textbf{(4.2.9)} Voor een $n \times n$-matrix $A$ zijn de volgende eigenschappen equivalent: \begin{enumerate}
+            \item $rg(A)=n$;
+            \item $A$ is regulier;
+            \item $det(A) \neq 0$.
+        \end{enumerate}
+        \item \textbf{(4.2.10)} Onderstel dat $f$ een lineaire afbeelding is van een eindigdimensionale vectorruimte $V$ naar zichzelf. Als $E$ en $F$ twee basissen zijn van $V$, dan is $$det([f]_{E,E})=det([f]_{F,F})$$
+        \item \textbf{(4.3.1)} Voor elke $B \in M_{n,n}(\mathbb{K})$ geldt dat $$det \begin{pmatrix}
+            1 & 0 \\
+            0 & B
+        \end{pmatrix}=det(B)$$
+        \item \textbf{\textbf{(4.3.2)} Neem een $n \times n$-matrix $A$. De minor $A_{i,j}$ is dan de determinant van de matrix die ontstaat door uit $A$ de i-de rij en de j-de kolom weg te laten: $$A_{i,j}=(-1)^{i+j} \begin{vmatrix}
+            a_{11} & ... & a_{1,j-1} & a_{1,j+1} & \dots & a_{1n} \\
+            \vdots & & \vdots & \vdots & & \vdots \\
+            a_{i-1,1} & ... & a_{i-1,j-1} & a_{i-1,j+1} & \dots & a_{i-1,n} \\
+            a_{i+1,1} & ... & a_{i+1,j-1} & a_{i+1,j+1} & \dots & a_{i+1,n} \\
+            \vdots & & \vdots & \vdots & & \vdots \\
+            a_{n,1} & ... & a_{n,j-1} & a_{n,j+1} & \dots & a_{nn} 
+        \end{vmatrix}$$ De determinant van de matrix $A$ wordt gegeven door de formule $$det(A)=\sum_{i=1}^n a_{ij}A_{ij}= a_{1j}A_{1j}+\dots+a_{nj}A_{nj}$$ Deze formule wordt de ontwikkeling van $det(A)$ volgens de j-de kolom genoemd.}
+        \item \textbf{(4.3.3)} Voor een $n \times n$-matrix $A$ geldt: $$det(A)=\sum_{i=1}^n a_{ij}A_{ij}= a_{i1}A_{i1}+\dots+a_{in}A_{in}$$ voor elke $i=1,\dots,n$. Deze formule wordt de ontwikkeling van $det(A)$ volgens de i-de rij genoemd.
+        \item \textbf{\textbf{(4.3.4)} Voor elke $n \times n$-matrix $A$ geldt: $$adj(A)A=Aadj(A)=det(A)I_n$$}
+        \item \textbf{(4.3.5)} Als $det(a)\neq 0$, dan is $$A^{-1}= \frac{1}{det(A)}adj(A)$$
+        \item \textbf{\textbf{(4.3.7)} Als $A$ een reguliere $n \times n$-matrix is, dan wordt de unieke oplossing van het lineaire stelsel $AX=B$ gegeven door de formule $$x_i= \frac{1}{det(A)} \begin{vmatrix}
+            a_{11} & ... & a_{1,i-1} & b_1 &a_{1,i+1} & \dots & a_{1n} \\
+            a_{21} & ... & a_{2,i-1} & b_2 &a_{2,i+1} & \dots & a_{2n} \\
+            \vdots & & \vdots & \vdots & & & \vdots \\
+            a_{n,1} & ... & a_{n,i-1} & b_n & a_{n,i+1} & \dots & a_{nn} 
+        \end{vmatrix}$$}
+        \item \textbf{(4.3.9)} Beschouw een vierkante matrix $A \in M_{n,n}(\mathbb{K})$, en noteer $m_A$ voor de lineaire afbeelding $\mathbb{K}^n \rightarrow \mathbb{K}^n:X \mapsto AX$. Dan zijn de volgende eigenschappen equivalent: \begin{enumerate}
+            \item $A$ is regulier;
+            \item $A$ heeft een linksinverse $A':A'A=I_n$;
+            \item $A$ heeft een rechtsinverse $A'':AA''=I_n$;
+            \item $m_A$ is bijectief;
+            \item $m_A$ is injectief;
+            \item $m_A$ is surjectief;
+            \item voor elke $B \in \mathbb{K}^n$ heeft het stelsel $AX=B$ een unieke oplossing;
+            \item $AX=0$ heeft enkel $X=0$ als oplossing;
+            \item voor elke $B \in \mathbb{K}^n$ heeft het stelsel $AX=B$ minstens één oplossing;
+            \item $rg(A)=n$;
+            \item de kolommen van $A$ zijn lineair afhankelijk;
+            \item $rg(A^t)=n$;
+            \item de rijen van $A$ zijn lineair onafhankelijk;
+            \item $det(A) \neq 0$.
+        \end{enumerate}
+        \item \textbf{(4.3.10)} Als \begin{equation}
+            \begin{cases} 
+                a_{11}x_1+a_{12}x_2+\dots + a_{1n}x_n = b_1 \\ 
+                a_{21}x_1+a_{22}x_2+\dots + a_{2n}x_n = b_2 \\ 
+                \vdots \\
+                a_{n1}x_1+a_{n2}x_2+\dots + a_{nn}x_n = b_n \\
+                a_{n+1,1}x_1+a_{n+1,2}x_2+\dots+ a_{n+1,n}x_n = b_{n+1} 
+            \end{cases}
+            \end{equation}
+            een oplossing heeft, dan is $$D=\begin{vmatrix}
+                a_{11} & a_{12}... & a_{1n} & b_1 \\
+                a_{21} & a_{22}... & a_{2n} & b_2 \\
+                \vdots & \vdots & & \vdots & \vdots \\
+                a_{n1} & a_{n2}... & a_{nn} & b_n \\ 
+                a_{n+1,1} & a_{n+1,2}... & a_{n+1,n} & b_{n+1}
+            \end{vmatrix}=0$$ Omgekeerd, indien $det(A) \neq 0$ en $D=0$, dan heeft (1) een unieke oplossing.
+    \end{enumerate}
     \subsection{Permutaties}
+    \begin{enumerate}
+        \item Defineer de permutatie van een verzameling $A$. Defineer hierbij ook $S(A)$.
+        \item Defineer de symmetrische groep. Welke stelling is hier aan verbonden?
+        \item Hoeveel elementen zitten in de verzameling van de permutaties? Veralgemeen dit in een stelling.
+        \item Hoe noteert men een permutatie en de verzameling van permutaties?
+        \item Neem $A=\{1,2,3,4,5,6,7,8\}$ en permutatie $$\sigma \begin{bmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+            3 & 4 & 5 & 6 & 7 & 2 & 1 & 8 
+        \end{bmatrix}$$ Wat zijn de banen en fixpunten van deze permutaite?
+        \item Welke stelling veralgemeent het fenomeen dat elke baan sluit?
+        \item Hoe weten we dat een verzameling zich splitst in partities van banen van $\sigma \in S(A)$?
+        \item Defineer Partitie van $A$.
+        \item Defineer cyclische permutaties.
+        \item Defineer verwisseling van $A$. Hoe kunnen we dit gebruiken in de definitie van de permutatie?
+        \item Als een permutatie $\sigma$ kan geschreven worden als de samenstelling van een even/oneven aantal verwisselingen dan ... ? Wat is hiermee het probleem? Kunnen we de pariteit beter defineren?
+        \item Wat gebeurt er met de pariteit na een verwisseling? Veralgemeen deze eigenschap in een stelling.
+        \item Als $\sigma \in S(A)$ kan geschreven worden als de samestelling van $p$ verwisselingen, dan is ... ? De afbeelding $\varepsilon:S(A) \rightarrow \{-1,1\}$ voldoet aan volgende eigenschap: ... ?
+        \item Defineer de alternerende groep.
+    \end{enumerate}
     \subsection{De determinant van een vierkante matrix}
+    \begin{enumerate}
+        \setcounter{enumi}{14}
+        \item Wat zijn de eigenschappen van $3\times 3$-matrices?
+        \item Leid de formule van de determinant van een $3 \times 3$-matrix af.
+        \item Defineer multilineaire en alternerende afbeeldingen.
+        \item Welke eigenschappen gelden als de afbeelding $d:M_{n,n}(\mathbb{K})\rightarrow \mathbb{K}$ multilineair en alternerende is?
+        \item \textbf{Defineer de determinantafbeelding.}
+        \item Door welke formule wordt de determinantafbeelding gegeven? Hoeveel determinantafbeeldingen bestaan er?
+        \item Wat is het verband van de determinant van een matrix en zijn getransponeerde? Welke eigenschappen kan je met dit verband bewijzen?
+        \item $det(A\cdot B)= ?$ Welke lemma heeft men nodig voor dit bewijs?
+        \item $\forall A \in M_{nn}(\mathbb{K}) gelden de eigenschappen: ... ?$ (3)
+        \item Defineer de determinant van een lineaire afbeelding. Welke stelling heeft men hiervoor nodig?
+    \end{enumerate}
     \subsection{De ontwikkeling van de determinant volgens een rij of een kolom}
+    \begin{enumerate}
+        \setcounter{enumi}{24}
+        \item \textbf{Hoe bepaal je een determinant aan de hand van een ontwikkeling volgens de kolom? Geef hierbij ook het nodige Lemma.}
+        \item Hoe bepaal je een determinant aan de hand van een ontwikkeling volgens de rij?
+        \item \textbf{Defineer de geadjungeerde van een matrix.}
+        \item \textbf{Wat is het verband tussen de determinant en de geadjungeerde van een matrix? Hoe kan men hiermee de inverse berekenen?}
+        \item \textbf{Hoe bereken je $A^{-1}$? Waarom werkt deze methode?}
+        \item Leg de regel van Cramer uit. Wanneer is dit niet handig?
+        \item Geef de 14 karakteriserende eigenschappen voor reguliere matrices.
+        \item Als \begin{equation}
+            \begin{cases} 
+                a_{11}x_1+a_{12}x_2+\dots + a_{1n}x_n = b_1 \\ 
+                a_{21}x_1+a_{22}x_2+\dots + a_{2n}x_n = b_2 \\ 
+                \vdots \\
+                a_{n1}x_1+a_{n2}x_2+\dots + a_{nn}x_n = b_n \\
+                a_{n+1,1}x_1+a_{n+1,2}x_2+\dots+ a_{n+1,n}x_n = b_{n+1} 
+            \end{cases}
+            \end{equation}
+            een oplossing heeft, dan is ... ? Omgekeerd ... ?
+    \end{enumerate}
 \end{document}

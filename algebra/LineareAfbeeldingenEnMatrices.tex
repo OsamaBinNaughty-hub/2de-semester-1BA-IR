@@ -9,11 +9,152 @@
     Vetgedrukte vragen zijn vragen gesteld in vorige examens.
     \setcounter{section}{2}
     \subsection*{Te bewijzen stellingen}
+    \begin{enumerate}
+        \item \textbf{(2.1.3.)} Onderstel dat $f: V \rightarrow W$ lineair is. Dan is $f(\vec{0})=\vec{0}$.
+        \item \textbf{(2.1.4.)} Onderstel dat $f: V \rightarrow W$ en $g: W \rightarrow X$ lineaire afbeeldingen zijn. Dan is $g \circ f: V \rightarrow X$ ook een lineaire afbeelding.
+        \item \textbf{(2.1.5.)} Onderstel dat $f: V \rightarrow W$ lineaire afbeeldingen zijn, en dat $\alpha \in \mathbb{K}$. Dan zijn de afbeeldingen $f+g$ en $\alpha f$, gedefineerd door $$f+g: V \rightarrow W: \vec{a} \mapsto f(\vec{a}) + g(\vec{a})$$ en $$\alpha f : V \rightarrow W: \vec{a} \mapsto \alpha f(\vec{a})$$ ook lineaire afbeeldingen.
+        \item \textbf{(2.1.6.)} Onderstel dat $V=V_1 \oplus V_2$ de directe som van twee deelruimten van een vectorruimte is. Dan is de afbeelding $f:V \rightarrow V_1$ gedefineerd door $$f(\vec{v})=\vec{v}_1$$ indien $\vec{v}=\vec{v}_1 + \vec{v}_2$, met $\vec{v}_1 \in V_1$ en $\vec{v}_2 \in V_2$ een lineaire afbeelding die voldoet aan de eigenschap $$f\circ f = f$$
+        \item \textbf{(2.2.2.)} $Ker(f)$ is een deelruimte van $V$ en $Im(f)$ is een deelruimte van $W$.
+        \item \textbf{\textbf{(2.2.3.)} Voor een lineaire afbeelding $f: V \rightarrow W$ zijn de volgende uitspraken equivalent: \begin{enumerate}
+            \item f is injectief;
+            \item $Ker(f) = \{\vec{0}\}$;
+            \item Het beeld onder $f$ van een stel lineair onafhankelijke vectoren in $V$ is lineair onafhankelijk in $W$.
+        \end{enumerate}}
+        \item \textbf{\textbf{(2.2.4.)} Voor een lineaire afbeelding $f: V \rightarrow W$ zijn de volgende uitspraken equivalent: \begin{enumerate}
+            \item f is surjectief;
+            \item $Im(f) = W$;
+            \item Als $vect(A)=V$, dan is $vect(f(A)) = W$.
+        \end{enumerate}}
+        \item \textbf{\textbf{(2.2.6.)} Als $f: V \rightarrow W$ een isomorfisme is, dan is het beeld van elke basis van $V$ een basis van $W$. Bijgevolg hebben (eigendimensionale) isomorfe vectorruimten dezelfde dimensie.}
+        \item \textbf{\textbf{(2.2.7.)} Als $f: V \rightarrow W$ een isomorfisme is, dan is ook de inverse afbeelding $f^{-1}: W \rightarrow V$ een isomorfisme.}
+        \item \textbf{(2.2.8.)} Als $f: V \rightarrow W$ en $g: W \rightarrow X$ isomorfismen zijn, dan is ook $g \circ f: V \rightarrow X$ een isomorfisme.
+        \item \textbf{(2.2.9.)} Voor elke vectorruimte $V$ is $1_V : V \rightarrow V$ een isomorfisme.
+        \item \textbf{(2.2.10.)} Voor elke n-dimensionale vectorruimte V met geordende basis $E$ geldt dat $$[\bullet]_E:V \rightarrow \mathbb{K}^n : \vec{v}\mapsto [\vec{v}]_E$$ een isomorfisme is. 
+        \item \textbf{(2.2.11.)} Als $dim(V) = dim(W)=n$, dan is $$V \simeq W \simeq \mathbb{K}^n.$$
+        \item \textbf{\textbf{(2.2.12.)} Tweede dimensiestelling.}
+        \item \textbf{(2.2.13.)} (Stelling van het alternatief) Onderstel dat $V$ en $W$ vectorruimten zijn met dezelfde dimensie, en dat $f:V \rightarrow W$ een lineaire afbeelding is. Volgende eigenschappen zijn equivalent: \begin{enumerate}
+            \item $f$ is een isomorfisme;
+            \item $f$ is injectief;
+            \item $f$ is surjectief.
+        \end{enumerate}
+        \item \textbf{(2.3.1.)} $Hom_{\mathbb{K}}(V,V)$ is een deelruimte van $W^V$.
+        \item \textbf{(2.4.1.)} $M_{m,n}(\mathbb{K})$ is ee vectorruimte, en de afbeelding $$[\bullet]_{F,E}: Hom_{\mathbb{K}}(V,W) \rightarrow M_{m,n}(\mathbb{K})$$ is een isomorfisme. Bovendien geldt dat $$dim(M_{m,n}(\mathbb{K})) = dim(Hom_{\mathbb{K}}(V,W))=mn.$$ 
+        \item \textbf{(2.5.2.)} Als $V$,$W$ en $X$ eindigdimensionale vectorruimten zijn basissen respectievelijk $E$, $F$ en $G$, en $f:V \rightarrow W$, $g:W \rightarrow X$ lineaire afbeeldingen zijn, dan geldt dat de matrix van de samenstelling $g \circ f$ gegeven wordt door het product van de matrices van $g$ en van $f$: $$[g \circ f]_{G,E} = [g]_{G,F}[f]_{F,E}$$
+        \item \textbf{(2.5.3.)} Het product van matrices is associatief.
+        \item \textbf{(2.5.6.)} Als $A\, , \, B \in M{m,n}(\mathbb{K})$ regulier zijn, dan is ook $AB$ regulier. Verder is $$(AB)^{-1} = B^{-1}A^{-1}$$
+        \item \textbf{(2.5.7.)} Als $A \in M{m,n}(\mathbb{K})$ regulier is en $B$, $C \in M{m,n}(\mathbb{K})$, dan geldt $$AB=AC \Rightarrow B=C$$ Wat gebeurt er als $A$ singulier is?
+        \item \textbf{(2.6.1.)} Onderstel dat $E$ en $E'$ twee basissen zijn voor een eindigdimensionale vectirruimte $V$, en dat de elementen $m_{ij}$ van de matrix $M$ gegeven worden door de formule $$\vec{e}_j\,' = \sum^n_{i=1} m_{ij}\vec{e}_i$$ Dan is $M$ regulier en voor elke $\vec{v}\in V$ hebben we dat $$[\vec{v}]_E = M[\vec{v}]_{E'} \,\, en \,\, [\vec{v}]_{E'}= M^{-1}[\vec{v}]_E$$
+        \item \textbf{(2.6.3.)} Beschouw een lineaire afbeelding $f:V \rightarrow W$, en de bassisen $E$ en $E'$ van $V$ en $F$ en $F'$ van $W$. Als de matrices $M$ en $N$ gegeven zijn door de formules $$\vec{e}_j\,' = \sum^n_{i=1} m_{ij}\vec{e}_i \,\, en \,\, \vec{f}_k\,' = \sum^m_{l=1} n_{lk}\vec{f}_l$$
+        
+        \item \textbf{(2.7.2.)} De rang van een matrix $A$ is het maximaal aantal lineair onafhankelijke kolommen van $A$.
+        \item \textbf{(2.7.3.)} Onderstel dat $f:V \rightarrow W$ een lineaire afbeelding is en dat $E$, $F$ basissen zijn voor respectievelijk $V$ en $W$. Als $A=[f]_{F,E}$, dan is $$rg(A)=rg(f)$$
+        \item \textbf{(2.7.4.)} Beschouw een $m \times n-matrix \, \, A$, een reguliere $n\times n-matrix \, \, M$, en een reguliere $m\times m-matix \,\, N$. Dan geldt $$rg(N^{-1}AM)=rg(A)$$
+        \item \textbf{(2.7.6.)} voor elke $m \times n-matrix \,\, A$ en $n \times p - matrix \,\, B$ geldt: $$(AB)^t = B^tA^t$$
+        \item \textbf{(2.7.7.)} De getransponeerde van een reguliere matrix is ook regulier.
+        \item \textbf{\textbf{(2.7.8.)} De rang van elke matrix $A$ is gelijk aan die van zijn getransponeerde.}
+        \item \textbf{(2.7.9.)} Onderstel dat $A\in M_{m,n}(\mathbb{K})$. Dan is $A$ regulier als en slechts als $rg(A)=n$.
+        \item \textbf{(2.7.12.)} De rang van een matrix in rij (kolom) echelon vorm is gelijk aan het aantal van nul verschillende rijen (kolommen).
+        \item \textbf{(2.7.14.)} Onderstel dat de matrix $B$ met rijen $S_1,\dots,S_n$ zijequivalent is met de matrix $A$ met rijen $R_1,\dots,R_n$. Dan is $$vect(S_1,\dots,S_n)=vect(R_1,\dots,R_n)$$ en bijgevolg is $$rg(A)=rg(B)$$ Geldt dit ook voor kolomequivalente matrices?
+        \item \textbf{(2.7.15.)} Elke matrix $A$ is rijequivalent (kolomequivalent) met een matrix in rij (kolom) echelon vorm.
+        \item \textbf{(2.7.16.)} Elke matrix A is rijequivalent (kolomequivalent) met een matrix in gereduceerde rij (kolom) echelon vorm.
+    \end{enumerate}
+    \subsection*{Te begrijpen stellingen}
+    \begin{enumerate}
+        \item \textbf{(2.6.6.)} Beschouw een lineaire afbeelding $f:V \rightarrow W$, en basissen $E$ en $E'$ van $V$. Als de matrix $M$ gegeven wordt door de formule $$\vec{e}_j\,' = \sum^n_{i=1} m_{ij}\vec{e}_i$$ dan is $$[f]_{E',E'} = M^{-1}[f]_{E,E}M$$
+    \end{enumerate}
+        
     \subsection{Lineaire afbeeldingen}
+    \begin{enumerate}
+        \item Defineer de lineaire afbeelding en de homomorfisme. Geef de formele en 'eigen woorden' definitie.
+        \item Welke voorwaarden moeten gelden zodat dit geldt: $$f(\vec{0})=\vec{0}$$
+        \item Welke voorwaarden moeten gelden zodat dit geldt: $$g \circ f: V \rightarrow X \,\, is \,\, een \,\, lineaire \,\, afbeelding$$
+        \item Onderstel dat $f: V \rightarrow W$ lineaire afbeeldingen zijn, en dat $\alpha \in \mathbb{K}$. Dan zijn de afbeeldingen $f+g$ en $\alpha f$, gedefineerd door ... ?
+        \item Onderstel dat $V=V_1 \oplus V_2$ de directe som van twee deelruimten van een vectorruimte is. Dan is de afbeelding $f:V \rightarrow V_1$ gedefineerd door $$...?$$ indien $\vec{v}=\vec{v}_1 + \vec{v}_2$, met $\vec{v}_1 \in V_1$ en $\vec{v}_2 \in V_2$ een lineaire afbeelding die voldoet aan de eigenschap $$...?$$ Welke nieuwe termen kunnen we invoegen wat hier gebeurt?
+    \end{enumerate}
     \subsection{Kern en beeld van een lineaire afbeelding}
+    \begin{enumerate}
+        \setcounter{enumi}{5}
+        \item \textbf{Defineer de kern en het beeld van een lineaire afbeelding $f$.}
+        \item Waarvan zijn de kern en het beeld de deelruimtes?
+        \item Wat is een injectieve en surjectieve afbeelding?
+        \item Geef het verband met injectie en surjecties met de kern en het beeld.
+        \item Wat is een bijectieve afbeelding?
+        \item \textbf{Defineer een isomorfisme. Wat betekent isomorf?}
+        \item Welke soort vectorruimten hebben dezelfde dimensie?
+        \item Is de inverse afbeelding van een afbeelding een isomorfisme?
+        \item Wat zijn de twee eigenschappen van isomorfisme?
+        \item Defineer reflectiviteit en transitiviteit.
+        \item Defineer: \begin{enumerate}
+            \item geordende basissen
+            \item coördinaten van ... tegen over ... 
+            \item coördinatenafbeelding tegen over ... 
+        \end{enumerate}
+        \item Wat is een eigenschap van de coördinatenafbeelding?
+        \item Wat is een voldoende voorwaarde om te gelden: $V\cong W \cong \mathbb{K}^n$
+        \item Wat zegt de tweede dimensiestelling?
+        \item Wat zegt de stelling van het alternatief?
+        \item Defineer: \begin{enumerate}
+            \item epimorfisme
+            \item monomorfisme
+            \item endomorfisme
+            \item automorfisme
+            \item lineaire vorm 
+        \end{enumerate}
+    \end{enumerate}
     \subsection{De vectirruimte van de lineaire afbeeldingen}
+    \begin{enumerate}
+        \setcounter{enumi}{21}
+        \item Defineer de vectorruimte van de lineaire afbeelding.
+        \item Wat is de 3e bewerking van de vectorruimte van de lineaire afbeelding.
+        \item Wat zijn de eigenschappen van de vectorruimte van de lineaire afbeelding? Hoe kan men deze eigenschappen samenvatten in 1 term?
+    \end{enumerate}
     \subsection{Matrices}
+    \begin{enumerate}
+        \setcounter{enumi}{24}
+        \item \textbf{Bouw de gedachtegang van een $m \times n$-matrix op.}
+        \item Wat zijn de eigenschappen van een $m \times n$-matrix?
+        \item Schrijf de matrices van de volgende lineaire afbeeldingen: \begin{enumerate}
+            \item $f: \mathbb{R} \rightarrow \mathbb{R}^n$
+            \item $f: \mathbb{R}^n \rightarrow \mathbb{R}$
+            \item $f: \mathbb{R}^2 \rightarrow \mathbb{R}^2$
+        \end{enumerate}
+    \end{enumerate}
     \subsection{Het product van matrices}
+    \begin{enumerate}
+        \setcounter{enumi}{27}
+        \item Defineer het product van matrices
+        \item Wat is de voorwaarde om 2 matrices te vermenigvuldigen?
+        \item Wanneer is BA en AB gedefineerd? (als A en B matrices zijn)
+        \item Defineer de eenheidsmatrix.
+        \item Defineer de inverse matrix.
+        \item Defineer de reguliere en singuliere matrix.
+        \item Is elke matrix regulier? Waarom wel/niet ?
+        \item Wat zijn de eigenschappen van reguliere matrices?
+    \end{enumerate}
     \subsection{Verandering van basis}
+    \begin{enumerate}
+        \setcounter{enumi}{35}
+        \item \textbf{Bouw de gedachtegang van een verband tussen de coördinaten van een vector tegen over 2 verschillende basissen van dezelfde vectorruimte. Welke stelling heb je hiermee bewezen?}
+        \item Kunnen we de verandering van een basis ook anders bekijken?
+        \item \textbf{Bouw de overgangsformules voor de matrix van een lineaire afbeelding op. Welke stelling hebben we hiermee bewezen? (AKA Hoe verandert de matrix als de basis verandert?)}
+        \item Wat gebeurt er met de overgansformule voor de matrix van een endomorfisme?
+    \end{enumerate}
     \subsection{De rang van een matrix}
+    \begin{enumerate}
+        \setcounter{enumi}{39}
+        \item \textbf{Defineer de rang van een lineaire afbeelding}
+        \item \textbf{Defineer de rang van een $m \times n$-matrix A. Kan je dit ook anders defineren?}
+        \item Hoe kan dit kloppen? $$rg(A)=rg(f)$$
+        \item Hoe kan dit kloppen? $$rg(N^{-1}AM)=rg(A)$$
+        \item $(AB)^t = ?$
+        \item Als ik een reguliere matrix transponeer, wat is er interessant aan deze matrix?
+        \item $rg(A^t)= ?$
+        \item Hoe kan dit kloppen? $$A \,\, regulier \Leftrightarrow rg(A)=n$$
+        \item Defineer (gereduceerde) rij echelon vorm.
+        \item De rang van een matrix in rij(kolom) echelon vorm is gelijk aan ... ?
+        \item Defineer een elementaire rij(kolom) operatie.
+        \item Defineer rijequivalentie (kolomequivalentie).
+        \item Wat is er interessant aan de rang van 2 matrixen die rijequivalent zijn?
+        \item Elke matrix A is rijequivalent (kolomequivalent) met ... ? 
+    \end{enumerate}
 \end{document}
